@@ -10,6 +10,7 @@
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <experiencefragment-header
                 jcr:primaryType="nt:unstructured"
+                jcr:title="Experience Fragment Header"
                 sling:resourceType="sanjeevni/components/content/experiencefragment"
                 fragmentVariationPath="/content/experience-fragments/sanjeevni/language-masters/en/site/header/master"/>
             <responsivegrid

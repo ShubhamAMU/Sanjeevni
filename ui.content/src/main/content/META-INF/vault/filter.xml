@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
-    <filter root="/conf/sanjeevni" mode="merge"/>
+    <filter root="/conf/sanjeevni" mode="update"/>
     <filter root="/content/sanjeevni" mode="merge"/>
     <filter root="/content/dam/sanjeevni" mode="merge"/>
-    <filter root="/content/experience-fragments/sanjeevni" mode="merge"/>
+    <filter root="/content/experience-fragments/sanjeevni" mode="update"/>
 </workspaceFilter>
