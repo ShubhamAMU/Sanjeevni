@@ -3,5 +3,4 @@
     jcr:description="viewMaster"
     jcr:primaryType="cq:Component"
     jcr:title="viewMaster"
-    sling:resourceSuperType="touchmulti"
-    componentGroup="Sanjeevni Component Group"/>
+    componentGroup="Sanjeevni.Content"/>

@@ -3,5 +3,4 @@
     jcr:description="viewChilds"
     jcr:primaryType="cq:Component"
     jcr:title="viewChilds"
-    sling:resourceSuperType="touchmulti"
-    componentGroup="Sanjeevni Component Group"/>
+    componentGroup="Sanjeevni.Content"/>

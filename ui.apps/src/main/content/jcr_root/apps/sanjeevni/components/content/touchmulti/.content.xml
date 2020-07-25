@@ -3,5 +3,4 @@
     jcr:description="touchmulti"
     jcr:primaryType="cq:Component"
     jcr:title="touchmulti"
-    sling:resourceSuperType="touchmulti"
-    componentGroup="Sanjeevni Component Group"/>
+    componentGroup="Sanjeevni.Content"/>
