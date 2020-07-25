@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-07-11T18:11:05.335+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-07-02T14:27:35.921+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/mfHTL64/settings/wcm/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="English"
+        jcr:uuid="e76f23f3-706a-40ec-bc16-7c87d38d53d6"
+        sling:resourceType="mfHTL64/components/structure/page"
+        pageTitle="New Project"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <image
+                    jcr:lastModified="{Date}2020-07-01T14:10:41.160+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mfHTL64/components/content/image"
+                    alt="hclcovid"
+                    displayPopupTitle="true"
+                    fileName="hcl.PNG"
+                    isDecorative="false">
+                    <file/>
+                </image>
+                <touchmulti
+                    jcr:created="{Date}2018-08-21T15:20:51.331-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-07-11T18:11:05.329+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mfHTL64/components/content/touchmulti">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="Detecting and isolating COVID-19 cases is a priority to slow down the spread of the pandemic. Specifically, the WHO has reiterated  that, besides finding, testing, isolating, and treating every positive case of COVID-19, it is vital to “trace all contacts” of individual positives with other people in order to curtail virus spread rates."
+                            linkPage="/content/hcl-covid19/homepage.html"
+                            pathbr="/content/dam/hclcovid/coronavirus-tracking-map.png"
+                            product="State Data Tracker"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="The Window will tell us about the update on 12 main companies that is focusing to develop this vaccine by mid 2021, and those are on final clinical human trial."
+                            linkPage="/content/hcl-covid19/homepage.html"
+                            pathbr="/content/dam/hclcovid/vacciene.jpg"
+                            product="Vaccine Progress "/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Tracking the Beds as per state is essentials, as there will be total transparency on available and occupied beds in an hospital."
+                            linkPage="/content/hcl-covid19/homepage.html"
+                            pathbr="/content/dam/hclcovid/infsoft-use-case-clinic.jpg"
+                            product=" Hospital  Information"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Containment Zone, Alternative Road by google map and integrating all of them to find the alternate and best approches from point A to Point B."
+                            linkPage="/content/hcl-covid19/homepage.html"
+                            pathbr="/content/dam/hclcovid/unnamed.jpg"
+                            product="Prevention Idea Point A-B"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="What are the best food practices at the time of coronavirus, all the details stuff to eat and immunity boosters."
+                            linkPage="/content/hcl-covid19/balanceImmunity.html"
+                            pathbr="/content/dam/hclcovid/covid-19-booting-immunity-with-food.jpg"
+                            product="Balance Immunity Diet "/>
+                    </products>
+                </touchmulti>
+            </responsivegrid>
+        </root>
+        <image/>
+    </jcr:content>
+</jcr:root>

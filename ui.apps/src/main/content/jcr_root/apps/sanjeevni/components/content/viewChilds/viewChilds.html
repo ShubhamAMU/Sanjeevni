@@ -1,0 +1,66 @@
+<sly data-sly-use.multiItems="com.hcl.sanjeevni.core.models.Multifield">
+    <div class="filewrapper">
+        <div class="support product-family-title product-type-0">
+            <div class="container">
+                <div class="col-md-5 col-sm-6 col-xs-12 blade-dd">
+                    <div class="icon-header">
+                        <div class="product-family-title-text">
+                            <h1 class="h1">
+                                Detail Page
+                            </h1>
+                        </div>
+                    </div>
+                    <form class="paging-info">
+                        <input type="search" id="searchbar" class="page-control" name="search" value="" placeholder="Search Items">
+                    </form>
+                    <a class="button-highlight file-wrapper-button" style="text-align: center;"
+                       href="/content/hcl-covid19/balanceImmunity.html" >Go Back</a>
+                </div>
+            </div>
+        </div>
+        <section class="blade download-center-details">
+            <div class="container">
+                <div class="row">
+
+                    <div class="column">
+                        <sly data-sly-list.head="${multiItems.products.listChildren}">
+                            <section class="description description-blade collapsible noindex">
+                                <header>
+                                    <h3><a href="${head.pathbr}"> ${head.product}</a></h3>
+                                </header>
+
+
+                                <div>
+                                    <div class="content-media">
+                                        <figure class="blade-image">
+                                            <img src="${head.pathbr}" class="center"/>
+                                        </figure>
+
+                                    </div>
+                                </div>
+
+                                <div class="descipt">
+                                 <p>
+                                    ${head.desc}
+                                 </p>   
+                                </div>
+
+                            </section>
+
+                            <div><br><br></div>
+
+                        </sly>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</sly>
+
+
+
+
+
+
+

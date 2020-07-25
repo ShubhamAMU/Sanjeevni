@@ -1,0 +1,143 @@
+<sly data-sly-use.multiItems="com.hcl.sanjeevni.core.models.Multifield">
+    <div class="rwd">
+        <div class="bladepar intelparsys">
+            <div class="views-master-grid sortableGrid section">
+                <div id="sortable-grid-1" class="sortable-grid component views-master-component" data-language="en-us"
+                     data-path="#"
+                     data-component-id="1" data-component="sortable-grid">
+
+                    <div class="form-refine-tool form-refine-tool-special sortable-refine-tool">
+                        <div class="refine-tool container">
+                            <nav class="pagination tool-pagination simplify-pagination">
+                                <form class="simplify-form-paging" novalidate="novalidate">
+                                    <ul class="list-inline">
+                                        <li class="result-label"><span
+                                                class="result-count">6</span> results</li>
+                                        <li class="paging use-carets" data-component-id="1" data-component="pagination-top">
+                                            <a class="paging-paddle prev" data-wap_ref="pagination-prev"></a><span
+                                                class="paging-info">
+							 				 Page
+                                    <span class="page-active" data-param-name="page">
+									<input type="text" pattern="[0-9\.]*" min="1" max="2" class="page-control"
+                                           name="paginationPageInput" value="1">
+								</span> of
+								<span class="page-total">2</span>
+							</span>
+                                            <a class="paging-paddle next" data-wap_ref="pagination-next"></a>
+                                        </li>
+
+                                    </ul>
+
+                                    <form class="paging-info" >
+                                        <input type="search" id="searchbar"
+                                               class="page-control" name="search" value="" placeholder="Search">
+                                    </form>
+
+                                </form>
+                            </nav>
+                            <nav class="tool-actions">
+                                <ul class="list-inline">
+                                    <li>
+                                        <button data-target="#form-refine-sortable-1" type="button"
+                                                class="btn btn-icon form-toggle" data-toggle="collapse">
+
+                                            Refine by
+                                        </button>
+                                    </li>
+
+
+
+                                </ul>
+
+                                <box class="box-copy-filter display-box">Copied!</box>
+                            </nav>
+                        </div>
+
+
+                        <div class="shaded sortable-grid">
+                            <div class="product-comp form-refine-comp">
+                            </div>
+
+                            <div class="sortable-grid-result">
+                                <div class="container">
+                                    <div class="container-wrap">
+                                        <div class="views-master-results sortable-item-results sortable-item-listing toggle-able"
+                                             id="sortable-item-results-1">
+
+                                            <sly data-sly-list.head="${multiItems.products.listChildren}">
+                                                <div class="sortable-grid-item matched "
+                                                     data-article-index="${loop.index}">
+                                                    <div class="item-wrap">
+
+                                                        <div class="content-wrap content-headline">
+
+                                                            <h3 class="title">
+                                                                <a href="${head.linkPage}"> ${head.product}</a>
+                                                            </h3>
+
+                                                            <figure class="blade-image">
+                                                                <img src="${head.pathbr}" class="center"/>
+                                                            </figure>
+
+                                                            <p class="article-date">${head.desc}</p>
+                                                        </div>
+                                                        <div class="content-wrap content-details">
+                                                            <p></p>
+                                                        </div>
+
+                                                        <div class="content-wrap content-action">
+                                                            <a class="btn btn-primary full-width" href="${head.linkPage}">View</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </sly>
+                                        </div>
+                                    </div>
+                                    <div class="text-center-mobile text-center">
+
+                                    </div>
+                                </div>
+                                <div class="loader hidden">
+                                    <div class="loading-spinner light-blue hidden"></div>
+                                </div>
+
+                                <div class="pagination-bottom">
+                                    <nav class="pagination tool-pagination simplify-pagination">
+                                        <form class="simplify-form-paging" novalidate="novalidate">
+                                            <ul class="list-inline">
+                                                <li class="result-label"><span
+                                                        class="result-count">6</span> results</li>
+                                                <li class="paging use-carets" data-component-id="1"
+                                                    data-component="pagination-bottom">
+                                                    <a class="paging-paddle prev" data-wap_ref="pagination-prev"></a><span
+                                                        class="paging-info">
+										  Page
+								<span class="page-active" data-param-name="page"><input type="text" pattern="[0-9\.]*"
+                                                                                        min="1" max="2"
+                                                                                        class="page-control"
+                                                                                        name="paginationPageInput"
+                                                                                        value="1"></span> of  <span
+                                                        class="page-total"></span>
+								</span>2
+                                                    <a class="paging-paddle next" data-wap_ref="pagination-next"></a>
+                                                </li>
+
+
+                                            </ul>
+                                        </form>
+                                    </nav>
+
+                                </div>
+                                <div class="content-wrap content-action">
+                                    <a class="btn btn-primary full-width" href="/content/hcl-covid19/homepage.html">Go Back</a>
+                                </div>
+
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+</sly>
+

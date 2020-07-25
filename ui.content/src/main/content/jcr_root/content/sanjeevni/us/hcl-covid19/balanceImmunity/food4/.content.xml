@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-07-16T15:04:01.634+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-07-02T14:27:35.921+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/mfHTL64/settings/wcm/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="seafood"
+        jcr:uuid="6169413d-fe25-4f3b-9973-e1f321dd77e4"
+        sling:resourceType="mfHTL64/components/structure/page"
+        pageTitle="seafood"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <viewchilds
+                    jcr:created="{Date}2020-07-13T17:02:12.540+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-07-16T15:04:01.631+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mfHTL64/components/content/viewChilds">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="A 3-ounce serving supplies more than 100 percent of your daily need for vitamin D. This nutrient keeps a wide variety of immune cells in working order; not getting enough can put you at risk for infection. Salmon also provides protein and omega-3s that boost immune-system strength."
+                            linkPage="/content/cq:tags"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/seafood/salmon fish.PNG"
+                            product="Salmon Fish"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="White shrimp, like other invertebrate animals, depend on their immune system to protect themselves from diseases in situations where some microbe or foreign particle invades their tissues. This immunological reaction is manifested through cellular mechanisms where hemocytes play a very important role."
+                            linkPage="/content/cq:tags"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/seafood/prawn.PNG"
+                            product="Prawns"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Mussels are also a brilliant source of vitamins. Plus they give you a shot of important minerals, such as zinc, which helps build immunity. Mussels even contain levels of iron and folic acid to rival red meats"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/seafood/Mussels1.PNG"
+                            product="Mussels"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Oysters. They've got zinc in them, which appears to have some virus-fighting powers. That's probably because zinc helps create and activate white blood cells involved in the immune response. It also assists your immune system with tasks such as healing wounds."
+                            pathbr="/content/dam/hclcovid/balanceimmunity/seafood/oysters.PNG"
+                            product="Oysters"/>
+                    </products>
+                </viewchilds>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

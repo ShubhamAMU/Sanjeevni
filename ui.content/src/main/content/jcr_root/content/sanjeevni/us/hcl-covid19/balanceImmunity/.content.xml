@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-07-16T15:40:59.036+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-07-02T14:27:35.921+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/mfHTL64/settings/wcm/templates/content-page"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Immunity Booster"
+        jcr:uuid="d60a24b0-882f-4ffa-bbc7-25f6d57a0fa5"
+        sling:resourceType="mfHTL64/components/structure/page"
+        pageTitle="Immunity Booster"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <viewmaster
+                    jcr:created="{Date}2020-07-11T15:36:12.274+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-07-16T15:40:59.032+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mfHTL64/components/content/viewMaster">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="Vegetables enriched with Vitamins. Green vegetables. Green veggies provide anti-inflammatory antioxidants, as well as key nutrients known to help the immune system function,."
+                            linkPage="/content/hcl-covid19/balanceImmunity/food1.html"
+                            pathbr="/content/dam/hclcovid/covid-19-booting-immunity-with-food.jpg"
+                            product="Vegetables"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="Almost all citrus fruits are high in vitamin C. With such a variety to choose from, it’s easy to add a squeeze of this vitamin to any meal."
+                            linkPage="/content/hcl-covid19/balanceImmunity/food2.html"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/citrus/citrus.PNG"
+                            product="Citrus Fruits"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="When you’re sick and you reach for chicken soup, it’s more than just the placebo effect that makes you feel better. The soup may help lower inflammation, which could improve symptoms of a cold."
+                            linkPage="/content/hcl-covid19/balanceImmunity/food3.html"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/meat/chicken.PNG"
+                            product="Meat "/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Fatty fish (such as salmon and tuna) contain ample amounts of healthy omega-3 fatty acids, which may enhance immune function. Omega-3s may help to reduce inflammation, and could increase your body's ability to ward off illnesses. "
+                            linkPage="/content/hcl-covid19/balanceImmunity/food4.html"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/seafood/title.PNG"
+                            product="Seafood"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="It's an immune system-booster. The beta-glucan found in oats helps boost our infection-fighting blood cells. Oats also contain selenium and zinc, two important nutrients for warding off infection and helping you stay in fighting shape."
+                            linkPage="/content/hcl-covid19/balanceImmunity/food5.html"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/nuts/title.PNG"
+                            product="Oats and Nuts"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            desc="All the essentials items which is helpful to increase the immunity.&#xd;&#xa;Turmeric, Sunflower Seed , Green Tea, Ginger and Garlic are some essentials which we uses everyday."
+                            linkPage="/content/hcl-covid19/balanceImmunity/food6.html"
+                            pathbr="/content/dam/hclcovid/balanceimmunity/others/turmeric.PNG"
+                            product="Others"/>
+                    </products>
+                </viewmaster>
+            </responsivegrid>
+        </root>
+        <image/>
+    </jcr:content>
+    <food1/>
+    <food2/>
+    <food3/>
+    <food4/>
+    <food5/>
+    <food6/>
+</jcr:root>
