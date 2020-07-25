@@ -3,7 +3,7 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
-        cq:template="/conf/sanjeevni/settings/wcm/templates/experience-fragment-web-variation-template"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-covid19-experience-fragment-template"
         jcr:primaryType="cq:PageContent"
         sling:resourceType="sanjeevni/components/structure/page">
         <root

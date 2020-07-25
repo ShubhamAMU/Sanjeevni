@@ -3,8 +3,11 @@
     jcr:primaryType="cq:Page">
     <jcr:content
         cq:deviceGroups="[mobile/groups/responsive]"
+        cq:lastModified="{Date}2020-07-25T01:56:55.160+05:30"
+        cq:lastModifiedBy="admin"
         cq:template="/conf/sanjeevni/settings/wcm/templates/empty-experience-fragment"
         jcr:primaryType="cq:PageContent"
+        jcr:title="Sanjeevi-Covid19 XF "
         sling:resourceType="sanjeevni/components/structure/page">
         <root
             jcr:primaryType="nt:unstructured"
@@ -21,5 +24,8 @@
                     width="{Long}1200"/>
             </breakpoints>
         </cq:responsive>
+        <image
+            jcr:primaryType="nt:unstructured"
+            fileReference="/content/dam/sanjeevni/coronavirus-tracking-map.png"/>
     </jcr:content>
 </jcr:root>

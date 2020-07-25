@@ -2,8 +2,11 @@
 <jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Template">
     <jcr:content
+        cq:lastModified="{Date}2020-07-25T01:51:44.166+05:30"
+        cq:lastModifiedBy="admin"
         cq:templateType="/conf/sanjeevni/settings/wcm/template-types/empty-experience-fragment"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Experience Fragment Web Variation Template"
+        jcr:title="Sanjeevni-Covid19 Experience Fragment Template"
+        fileReference="/content/dam/sanjeevni/coronavirus-tracking-map.png"
         status="enabled"/>
 </jcr:root>

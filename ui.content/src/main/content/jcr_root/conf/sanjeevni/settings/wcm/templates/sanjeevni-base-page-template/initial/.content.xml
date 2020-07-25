@@ -2,15 +2,17 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:tags="[experience-fragments:variation/web]"
-        cq:template="/conf/sanjeevni/settings/wcm/templates/experience-fragment-web-variation-template"
-        cq:xfVariantType="web"
+        cq:lastModified="{Date}2020-07-25T01:24:47.375+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
         jcr:primaryType="cq:PageContent"
-        sling:resourceType="sanjeevni/components/structure/xfpage">
+        sling:resourceType="sanjeevni/components/structure/page">
         <root
             jcr:primaryType="nt:unstructured"
             sling:resourceType="wcm/foundation/components/responsivegrid">
             <responsivegrid
+                jcr:lastModified="{Date}2020-07-25T01:09:12.528+05:30"
+                jcr:lastModifiedBy="admin"
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>

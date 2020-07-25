@@ -4,7 +4,8 @@
     jcr:primaryType="cq:Template"
     ranking="{Long}1">
     <jcr:content
-        jcr:description="Generic template for web pages"
+        jcr:description="Sanjeevni-Covid19 Empty Page Template"
         jcr:primaryType="cq:PageContent"
-        jcr:title="Sanjeevni-Covid19 Empty Page"/>
+        jcr:title="Sanjeevni-Covid19 Empty Page Template"
+        fileReference="/content/dam/sanjeevni/coronavirus-tracking-map.png"/>
 </jcr:root>

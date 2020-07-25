@@ -9,10 +9,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2020-07-25T01:50:02.832+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Sanjeevni-Covid19 Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:Sanjeevni.Content,/apps/sanjeevni/components/form/container,group:Sanjeevni.Structure]"
+                        components="[group:Sanjeevni.Content,/apps/sanjeevni/components/form/container]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -30,10 +32,12 @@
                             mergeList="{Boolean}true"/>
                     </content-default>
                     <policy_xfm
+                        jcr:lastModified="{Date}2020-07-25T01:51:44.160+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Sanjeevni-Covid19 Experience Fragment"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/libs/wcm/foundation/components/responsivegrid,group:Sanjeevni.Content,group:Sanjeevni.Form,group:Sanjeevni.Structure]">
+                        components="[group:Sanjeevni.Content,/apps/sanjeevni/components/form/container,group:Sanjeevni.Structure]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -66,38 +70,50 @@
         <components jcr:primaryType="nt:unstructured">
             <form jcr:primaryType="nt:unstructured">
                 <container jcr:primaryType="nt:unstructured">
-                    <form-container
+                    <policy_form-container
+                        jcr:lastModified="{Date}2020-07-25T01:49:36.429+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Form"
+                        jcr:title="Sanjeevni-Covid19 Form Container Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[/apps/sanjeevni/components/form/button,/apps/sanjeevni/components/form/hidden,/apps/sanjeevni/components/form/options,/apps/sanjeevni/components/form/text]">
+                        components="[/apps/sanjeevni/components/form/button,/apps/sanjeevni/components/form/container,/apps/sanjeevni/components/form/hidden,/apps/sanjeevni/components/form/options,/apps/sanjeevni/components/form/text]">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </form-container>
+                    </policy_form-container>
                 </container>
+                <text jcr:primaryType="nt:unstructured"/>
+                <options jcr:primaryType="nt:unstructured"/>
+                <hidden jcr:primaryType="nt:unstructured"/>
+                <button jcr:primaryType="nt:unstructured"/>
             </form>
             <content jcr:primaryType="nt:unstructured">
                 <button jcr:primaryType="nt:unstructured">
-                    <policy_xfm
+                    <policy_button
+                        jcr:lastModified="{Date}2020-07-25T01:22:43.555+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Button - Experience Fragment"
+                        jcr:title="Sanjeevni-Covid19 Button Policy"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </policy_xfm>
+                    </policy_button>
                 </button>
                 <languagenavigation jcr:primaryType="nt:unstructured">
-                    <policy_xfm
+                    <policy_languagenavigation
+                        jcr:lastModified="{Date}2020-07-25T01:19:23.041+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Language Navigation - Experience Fragment"
+                        jcr:title="Sanjeevni-Covid19 Language Navigation Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
                         navigationRoot="/content/sanjeevni"
                         structureDepth="1">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </policy_xfm>
+                    </policy_languagenavigation>
                 </languagenavigation>
                 <image jcr:primaryType="nt:unstructured">
-                    <policy_xfm
+                    <policy_image
+                        jcr:lastModified="{Date}2020-07-25T01:19:49.277+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Image - Experience Fragment"
+                        jcr:title="Sanjeevni-Covid19 Image Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
                         allowedRenditionWidths="[300,400,500,600,700,800,900,1000,1100,1200]"
                         allowUpload="true"
@@ -137,20 +153,22 @@
                                 features="right"/>
                             <flip
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="horizontal,vertical"/>
                         </plugins>
-                    </policy_xfm>
+                    </policy_image>
                 </image>
                 <text jcr:primaryType="nt:unstructured">
-                    <policy_xfm
+                    <policy_text
+                        jcr:lastModified="{Date}2020-07-25T01:18:35.380+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Text - Experience Fragments"
+                        jcr:title="Sanjeevni-Covid19 Text Policy"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <rtePlugins jcr:primaryType="nt:unstructured">
                             <paraformat
                                 jcr:primaryType="nt:unstructured"
-                                features="-">
+                                features="*">
                                 <formats
                                     jcr:primaryType="nt:unstructured"
                                     override="true">
@@ -198,7 +216,7 @@
                             </paraformat>
                             <misctools
                                 jcr:primaryType="nt:unstructured"
-                                features="-">
+                                features="sourceedit,specialchars">
                                 <specialCharsConfig jcr:primaryType="nt:unstructured">
                                     <chars
                                         jcr:primaryType="nt:unstructured"
@@ -224,77 +242,94 @@
                             </misctools>
                             <edit
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="paste-plaintext,paste-wordhtml"/>
                             <findreplace
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <undo
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <spellcheck
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <image
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <table
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <lists
                                 jcr:primaryType="nt:unstructured"
                                 features="*"/>
                             <justify
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                             <format
                                 jcr:primaryType="nt:unstructured"
-                                features="bold,italic"/>
+                                features="bold,italic,underline"/>
                             <links
                                 jcr:primaryType="nt:unstructured"
                                 features="modifylink,unlink"/>
                             <subsuperscript
                                 jcr:primaryType="nt:unstructured"
-                                features="-"/>
+                                features="*"/>
                         </rtePlugins>
-                    </policy_xfm>
+                    </policy_text>
                 </text>
                 <title jcr:primaryType="nt:unstructured">
-                    <policy_xfm
+                    <policy_title
+                        jcr:lastModified="{Date}2020-07-25T01:18:00.856+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Title - Experience Fragments"
+                        jcr:title="Sanjeevni-Covid19 Title Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
                         allowedTypes="[h1,h2,h3,h4,h5,h6]"
                         linkDisabled="false"
                         type="h1">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </policy_xfm>
+                    </policy_title>
                 </title>
                 <experiencefragment jcr:primaryType="nt:unstructured">
                     <policy_header
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Experience Fragment - Header"
+                        jcr:title="Sanjeevni-Covid19 Header Policy"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_header>
                     <policy_footer
                         jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Experience Fragment - Footer"
+                        jcr:title="Sanjeevni-Covid19 Footer Policy"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_footer>
+                    </policy_footer>
                 </experiencefragment>
+                <teaser jcr:primaryType="nt:unstructured"/>
+                <tabs jcr:primaryType="nt:unstructured"/>
+                <separator jcr:primaryType="nt:unstructured"/>
+                <list jcr:primaryType="nt:unstructured"/>
+                <embed jcr:primaryType="nt:unstructured"/>
+                <container jcr:primaryType="nt:unstructured">
+                    <policy_container
+                        jcr:lastModified="{Date}2020-07-25T01:46:01.423+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Sanjeevni-Covid19 Container Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        backgroundColorEnabled="true"
+                        backgroundImageEnabled="true"
+                        components="[group:Sanjeevni.Content,/apps/sanjeevni/components/form/container]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_container>
+                </container>
+                <carousel jcr:primaryType="nt:unstructured"/>
+                <breadcrumb jcr:primaryType="nt:unstructured"/>
+                <accordion jcr:primaryType="nt:unstructured"/>
             </content>
             <structure jcr:primaryType="nt:unstructured">
                 <page jcr:primaryType="nt:unstructured">
-                    <policy_xfm
-                        jcr:primaryType="nt:unstructured"
-                        jcr:title="Sanjeevni-Covid19 Experience Fragment"
-                        sling:resourceType="wcm/core/components/policy/policy"
-                        clientlibs="[sanjeevni.dependencies,sanjeevni.site]"
-                        clientlibsJsHead="sanjeevni.dependencies">
-                        <jcr:content jcr:primaryType="nt:unstructured"/>
-                    </policy_xfm>
                     <policy_content_page
+                        jcr:lastModified="{Date}2020-07-25T01:24:26.095+05:30"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="Sanjeevni-Covid19 Page Policy"
                         sling:resourceType="wcm/core/components/policy/policy"
@@ -303,6 +338,8 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_content_page>
                 </page>
+                <search jcr:primaryType="nt:unstructured"/>
+                <navigation jcr:primaryType="nt:unstructured"/>
             </structure>
         </components>
     </sanjeevni>
