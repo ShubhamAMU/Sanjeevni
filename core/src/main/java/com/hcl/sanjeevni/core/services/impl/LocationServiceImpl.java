@@ -42,7 +42,9 @@ public class LocationServiceImpl implements LocationService {
 
     @Override
     public JsonArray getLocationDetails(String address) {
-        String url = getApiPath() + "?address=" + address + "&key=" + getApiKey();
+
+        String encodedAddress = Utility.encodeValue(address);
+        String url = getApiPath() + "?address=" + encodedAddress + "&key=" + getApiKey();
 
         LOG.info("URL formed for forward geocoding : " + url);
 
