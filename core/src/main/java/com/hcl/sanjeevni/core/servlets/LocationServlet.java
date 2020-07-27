@@ -42,24 +42,37 @@ public class LocationServlet extends SlingAllMethodsServlet {
         String address = request.getParameter("address");
         if (StringUtils.isNotEmpty(address)){
             JsonArray responseStream = locationService.getLocationDetails(address);
-            JsonObject locationResponse = responseStream.getAsJsonArray().get(0).getAsJsonObject();
-            LOG.info("Location Response : " + locationResponse.toString());
+            String formattedAddress = "";
+            String placeId = "";
+            String longitude = "0.0";
+            String latitude = "0.0";
             List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
             HashMap<String, String> productMap = new HashMap<String, String>();
 
-            String formattedAddress = Objects.nonNull(locationResponse.get("formatted_address")) ? locationResponse.get("formatted_address").getAsString() : "";
-            String placeId = Objects.nonNull(locationResponse.get("place_id")) ? locationResponse.get("place_id").getAsString() : "";
-            String longitude = Objects.nonNull(locationResponse.get("geometry")) ? locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lng").getAsString() : "";
-            String latitude = Objects.nonNull(locationResponse.get("geometry")) ? locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lat").getAsString() : "";
+            if(responseStream.getAsJsonArray().get(0).isJsonObject()){
+                JsonObject locationResponse = responseStream.getAsJsonArray().get(0).getAsJsonObject();
+                LOG.info("Location Response : " + locationResponse.toString());
 
+                if(Objects.nonNull(locationResponse.get("formatted_address")))
+                    formattedAddress = locationResponse.get("formatted_address").getAsString();
+
+                if(Objects.nonNull(locationResponse.get("place_id")))
+                    placeId = locationResponse.get("place_id").getAsString();
+
+                if(Objects.nonNull(locationResponse.get("geometry"))){
+                    latitude = locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lat").getAsString();
+                    longitude = locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lng").getAsString();
+                }
+
+            }
             productMap.put("formatted_address", formattedAddress);
             productMap.put("place_id", placeId);
             productMap.put("latitude", latitude);
             productMap.put("longitude", longitude);
             list.add(productMap);
-            LOG.info("Array list is {}",list.toString());
             response.setContentType(CoreConstants.APPLICATION_JSON);
             response.getWriter().write(list.toString());
+
         } else{
             address = "No address found";
             response.getWriter().write(address);

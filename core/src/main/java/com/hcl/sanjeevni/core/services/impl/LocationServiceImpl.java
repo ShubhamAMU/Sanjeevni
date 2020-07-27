@@ -44,7 +44,7 @@ public class LocationServiceImpl implements LocationService {
     public JsonArray getLocationDetails(String address) {
 
         String encodedAddress = Utility.encodeValue(address);
-        String url = getApiPath() + "?address=" + encodedAddress + "&key=" + getApiKey();
+        String url = getApiPath() + "?address=" + encodedAddress + "&components=country:IN&key=" + getApiKey();
 
         LOG.info("URL formed for forward geocoding : " + url);
 
