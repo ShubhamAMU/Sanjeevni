@@ -24,7 +24,7 @@ import java.util.Objects;
 @Component(service = Servlet.class,
         property = {
                 "sling.servlet.paths=/bin/hclcovid19/location",
-                "sling.servlet.methods = " + HttpConstants.METHOD_GET,
+                "sling.servlet.methods = " + HttpConstants.METHOD_GET
         }
 )
 public class LocationServlet extends SlingAllMethodsServlet {
@@ -44,8 +44,8 @@ public class LocationServlet extends SlingAllMethodsServlet {
             JsonArray responseStream = locationService.getLocationDetails(address);
             String formattedAddress = "";
             String placeId = "";
-            String longitude = "0.0";
-            String latitude = "0.0";
+            String longitude = locationService.getLongitude(responseStream);
+            String latitude = locationService.getLatitude(responseStream);
             List<HashMap<String, String>> list = new ArrayList<HashMap<String, String>>();
             HashMap<String, String> productMap = new HashMap<String, String>();
 
@@ -59,17 +59,13 @@ public class LocationServlet extends SlingAllMethodsServlet {
                 if(Objects.nonNull(locationResponse.get("place_id")))
                     placeId = locationResponse.get("place_id").getAsString();
 
-                if(Objects.nonNull(locationResponse.get("geometry"))){
-                    latitude = locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lat").getAsString();
-                    longitude = locationResponse.get("geometry").getAsJsonObject().get("location").getAsJsonObject().get("lng").getAsString();
-                }
-
             }
             productMap.put("formatted_address", formattedAddress);
             productMap.put("place_id", placeId);
             productMap.put("latitude", latitude);
             productMap.put("longitude", longitude);
             list.add(productMap);
+
             response.setContentType(CoreConstants.APPLICATION_JSON);
             response.getWriter().write(list.toString());
 

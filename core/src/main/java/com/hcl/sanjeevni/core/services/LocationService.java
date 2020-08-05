@@ -9,4 +9,8 @@ public interface LocationService {
     public String getApiPath();
 
     public String getApiKey();
+
+    public String getLatitude(JsonArray locationResponse);
+
+    public String getLongitude(JsonArray locationResponse);
 }
