@@ -1,0 +1,40 @@
+<h3>Covid19 Prevention Point A to B</h3>
+<div class="row">
+    <div class="column">
+        <div class="inner" id="floating-panel">
+            <b>Start: </b>
+            <input type="text" class="form-control" id="searchBarPickup" placeholder="Choose your origin location"
+                   value="">
+            <b>End: </b>
+            <input type="text" class="form-control" id="searchBarDrop" placeholder="Choose your destination location"
+                   value="">
+
+            <b>Mode: </b>
+            <select id="mode" value="">
+                <option value="DRIVING">Driving</option>
+                <option value="WALKING">Walking</option>
+                <option value="BICYCLING">Bicycling</option>
+                <option value="TRANSIT">Transit</option>
+            </select>
+
+            <button class="button-zone " onclick="getLocation()"><span>Region Info</span></button>
+            <p id="demo" class="font-route"></p>
+            <p id="route" class="font-route"></p>
+            <p id="demo1" class="font-route"></p>
+            <p id="nosafe" class="font-route"></p>
+
+        </div>
+    </div>
+    <div class="column" id="map">
+    </div>
+</div>
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuiZMLzQ4wcmlu4JlVK-RoX3QTADLVbI&callback=initMap">
+</script>
+
+
+
+
+
+
