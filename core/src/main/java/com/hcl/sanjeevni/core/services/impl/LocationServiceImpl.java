@@ -1,6 +1,7 @@
 package com.hcl.sanjeevni.core.services.impl;
 
 import com.google.gson.JsonArray;
+import com.google.gson.JsonObject;
 import com.hcl.sanjeevni.core.config.LocationServiceConfig;
 import com.hcl.sanjeevni.core.constants.CoreConstants;
 import com.hcl.sanjeevni.core.services.LocationService;
@@ -16,6 +17,8 @@ import org.osgi.service.component.propertytypes.ServiceVendor;
 import org.osgi.service.metatype.annotations.Designate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import java.util.Objects;
 
 @Component(service = LocationService.class, immediate = true)
 @Designate(ocd= LocationServiceConfig.class)
@@ -69,5 +72,33 @@ public class LocationServiceImpl implements LocationService {
         LOG.info("Json Array formed : " + locationJsonArray);
 
         return locationJsonArray;
+    }
+
+    @Override
+    public String getLatitude(JsonArray locationResponseArray) {
+        String latitude = "0.0";
+        if(getLocationObject(locationResponseArray) != null)
+            latitude = getLocationObject(locationResponseArray).get("lat").getAsString();
+
+        return latitude;
+    }
+
+    @Override
+    public String getLongitude(JsonArray locationResponseArray) {
+        String longitude = "0.0";
+        if(getLocationObject(locationResponseArray) != null)
+            longitude = getLocationObject(locationResponseArray).get("lng").getAsString();
+        return longitude;
+    }
+
+    private JsonObject getLocationObject(JsonArray responseArray){
+        JsonObject locationObject = null;
+        if(responseArray.getAsJsonArray().get(0).isJsonObject()){
+            JsonObject locationResponseObject = responseArray.getAsJsonArray().get(0).getAsJsonObject();
+            if(Objects.nonNull(locationResponseObject.get("geometry"))){
+                locationObject = locationResponseObject.get("geometry").getAsJsonObject().get("location").getAsJsonObject();
+            }
+        }
+        return locationObject;
     }
 }
