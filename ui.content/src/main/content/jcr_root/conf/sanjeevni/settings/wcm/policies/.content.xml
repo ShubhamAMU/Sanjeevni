@@ -155,6 +155,54 @@
                                 jcr:primaryType="nt:unstructured"
                                 features="horizontal,vertical"/>
                         </plugins>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0
+                                cq:styleGroupLabel="Size"
+                                jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="type_one_image"
+                                        cq:styleId="1596780515096"
+                                        cq:styleLabel="Type 1"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item1
+                                        cq:styleClasses="type_two_image"
+                                        cq:styleId="1596780545690"
+                                        cq:styleLabel="Type 2"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item2
+                                        cq:styleClasses="type_three_image"
+                                        cq:styleId="1596780572303"
+                                        cq:styleLabel="Type 3"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item3
+                                        cq:styleClasses="type_four_image"
+                                        cq:styleId="1596780590560"
+                                        cq:styleLabel="Type 4"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item4
+                                        cq:styleClasses="type_five_image"
+                                        cq:styleId="1596780607157"
+                                        cq:styleLabel="Type 5"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item5
+                                        cq:styleClasses="type_six_image"
+                                        cq:styleId="1596780620298"
+                                        cq:styleLabel="Type 6"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item6
+                                        cq:styleClasses="type_seven_image"
+                                        cq:styleId="1596780635140"
+                                        cq:styleLabel="Type 7"
+                                        jcr:primaryType="nt:unstructured"/>
+                                    <item7
+                                        cq:styleClasses="type_eight_image"
+                                        cq:styleId="1596780646727"
+                                        cq:styleLabel="Type 8"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
                     </policy_image>
                 </image>
                 <text jcr:primaryType="nt:unstructured">
