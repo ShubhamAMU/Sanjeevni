@@ -59,9 +59,6 @@
         if(value!=="" && valueDest!=="" && valueMode!==""){
              document.getElementById("searchBarPickup").value=value;
              document.getElementById("searchBarDrop").value =valueDest;
-
-
-
              var selectElement = document.getElementById("mode");
    			 var selectOptions = selectElement.options;
    			 for (var opt, j = 0; opt = selectOptions[j]; j++) {
@@ -385,7 +382,7 @@
 
 	var x = document.getElementById("demo");
 
-	function getLocation() {
+	const getLocation = function () {
  		 if (navigator.geolocation) {
    		 navigator.geolocation.getCurrentPosition(showPosition);
 		  } else {
@@ -394,7 +391,7 @@
 		}
 
 	function showPosition(position) {
-             getCovidAreacheck(position,x);
+             getCovidAreacheck(position);
 	}
 
 	const getCovidAreacheck = function (position) {
@@ -407,9 +404,7 @@
 				x.innerHTML = "Latitude: " + position.coords.latitude +
  			 "<br>Longitude: " + position.coords.longitude  +
               "<br>Your area is under "+ areadata.zone+" zone.";
-              getContainmentListsCircle(areadata.city,position.coords.latitude,position.coords.longitude);
-
-
+			 getContainmentListsCircle(areadata.city,position.coords.latitude,position.coords.longitude);
     	}
     }
     xhttp.open('GET',url,true);
@@ -419,8 +414,26 @@
 
 
   const getContainmentListsCircle = function (citycode,latitude,longitude) {
-       let url =null;
-   const map = new google.maps.Map(document.getElementById("map"), {
+    var json_airport='[{"IATA_code":"AMD","ICAO_code":"VAAH","airport_name":"Ahmedabad Airport","city_name":"Ahmedabad"},{"IATA_code":"AGR","ICAO_code":"VIAG","airport_name":"Kheria Airport","city_name":"Agra"},{"IATA_code":"BLR","ICAO_code":"VOBG","airport_name":"Bengaluru International Airport","city_name":"Bangalore"},{"IATA_code":"BHO","ICAO_code":"VABP","airport_name":"Bhopal Airport","city_name":"Bhopal"},{"IATA_code":"IXC","ICAO_code":"VICG","airport_name":"Chandigarh Airport","city_name":"Chandigarh"},{"IATA_code":"MAA","ICAO_code":"VOMM","airport_name":"Chennai International Airport","city_name":"Chennai"},{"IATA_code":"CJB","ICAO_code":"VOCB","airport_name":"Peelamedu Airport","city_name":"Coimbatore"},{"IATA_code":"DEL","ICAO_code":"VIDP","airport_name":"Indira Gandhi International Airport","city_name":"New Delhi"},{"IATA_code":"HYD","ICAO_code":"VOHY","airport_name":"Hyderabad International Airport","city_name":"Hyderabad"},{"IATA_code":"IDR","ICAO_code":"VAID","airport_name":"Devi Ahilyabai Holkar Airport","city_name":"Indore"},{"IATA_code":"JLR","ICAO_code":"VAJB","airport_name":"Jabalpur Airport","city_name":"Jabalpur"},{"IATA_code":"JAI","ICAO_code":"VIJP","airport_name":"Sanganeer Airport","city_name":"Jaipur"},{"IATA_code":"IXJ","ICAO_code":"VIJU","airport_name":"Satwari Airport","city_name":"Jammu"},{"IATA_code":"KNL","ICAO_code":"KNL","airport_name":"Karnool Airport","city_name":"Karnool"},{"IATA_code":"CCU","ICAO_code":"VECC","airport_name":"Netaji Subhash Chandra Bose International Airport","city_name":"Kolkata"},{"IATA_code":"LUH","ICAO_code":"VILD","airport_name":"Amritsar Airport","city_name":"Ludhiana"},{"IATA_code":"IXM","ICAO_code":"VOMD","airport_name":"Madurai Airport","city_name":"Madurai"},{"IATA_code":"BOM","ICAO_code":"VABB","airport_name":"Chhatrapati Shivaji International Airport","city_name":"Mumbai"},{"IATA_code":"MYQ","ICAO_code":"VOMY","airport_name":"Mysore Airport","city_name":"Mysore"},{"IATA_code":"PAT","ICAO_code":"VEPT","airport_name":"Patna Airport","city_name":"Patna"},{"IATA_code":"PNQ","ICAO_code":"VAPO","airport_name":"Lohegaon Airport","city_name":"Pune"},{"IATA_code":"IXR","ICAO_code":"VERC","airport_name":"Birsa Munda International Airport","city_name":"Ranchi"},{"IATA_code":"SXR","ICAO_code":"VISR","airport_name":"Srinagar Airport","city_name":"Srinagar"},{"IATA_code":"STV","ICAO_code":"VASU","airport_name":"Surat Airport","city_name":"Surat"},{"IATA_code":"UDR","ICAO_code":"VAUD","airport_name":"Dabok Airport","city_name":"Udaipur"},{"IATA_code":"BDQ","ICAO_code":"VABO","airport_name":"Vadodara Airport","city_name":"Vadodara"},{"IATA_code":"VTZ","ICAO_code":"VEVZ","airport_name":"Vishakhapatnam Airport","city_name":"Vishakhapatnam"}]';
+    var json_response=  JSON.parse(json_airport);
+      for(var i=0;i<json_response.length;i++){
+          if(json_response[i].IATA_code===citycode){
+			 url = 'https://www.covidhotspots.in/covid/city/'+json_response[i].city_name+'/hotspots';
+			  var zone=document.getElementById("containment-zone");
+              zone.innerHTML='<label class="zones_label" >Containment zones</label> <select id="containment" value="none" onchange="getCityListsCircle(this.options[this.selectedIndex].text)"> <option value="AMD">Agra</option> <option value="AGR">Ahmedabad</option> <option value="BLR">Bangalore</option> <option value="BHO">Bhopal</option> <option value="IXC">Chandigarh</option> <option value="MAA">Chennai</option> <option value="CJB">Coimbatore</option> <option value="DEL">Delhi</option> <option value="HYD">Hyderabad</option> <option value="IDR">Indore</option> <option value="JLR">Jabalpur</option> <option value="JAI">Jaipur</option> <option value="IXJ">Jammu</option> <option value="KNL">Karnool</option> <option value="CCU">Kolkata</option> <option value="LUH">Ludhiana</option> <option value="IXM">Madurai</option> <option value="BOM">Mumbai</option> <option value="MYQ">Mysore</option> <option value="PAT">Patna</option> <option value="PNQ">Pune</option> <option value="IXR">Ranchi</option> <option value="SXR">Srinagar</option> <option value="STV">Surat</option> <option value="UDR">Udaipur</option> <option value="BDQ">Vadodara</option> <option value="VTZ">Vishakhapatnam</option> </select>';
+             var selectElement = document.getElementById("containment");
+
+   			 var selectOptions = selectElement.options;
+   			 for (var opt, j = 0; opt = selectOptions[j]; j++) {
+     			   if (opt.value ==citycode ) {
+      			      selectElement.selectedIndex = j;
+     			       break;
+      			  }
+   			 }
+          }
+      }
+
+     const map = new google.maps.Map(document.getElementById("map"), {
           zoom: 12,
           center: {
              lat: latitude,
@@ -429,13 +442,6 @@
           mapTypeId: "terrain"
         });
 
-    var json_airport='[{"IATA_code":"AMD","ICAO_code":"VAAH","airport_name":"Ahmedabad Airport","city_name":"Ahmedabad"},{"IATA_code":"AGR","ICAO_code":"VIAG","airport_name":"Kheria Airport","city_name":"Agra"},{"IATA_code":"BLR","ICAO_code":"VOBG","airport_name":"Bengaluru International Airport","city_name":"Bangalore"},{"IATA_code":"BHO","ICAO_code":"VABP","airport_name":"Bhopal Airport","city_name":"Bhopal"},{"IATA_code":"IXC","ICAO_code":"VICG","airport_name":"Chandigarh Airport","city_name":"Chandigarh"},{"IATA_code":"MAA","ICAO_code":"VOMM","airport_name":"Chennai International Airport","city_name":"Chennai"},{"IATA_code":"CJB","ICAO_code":"VOCB","airport_name":"Peelamedu Airport","city_name":"Coimbatore"},{"IATA_code":"DEL","ICAO_code":"VIDP","airport_name":"Indira Gandhi International Airport","city_name":"New Delhi"},{"IATA_code":"HYD","ICAO_code":"VOHY","airport_name":"Hyderabad International Airport","city_name":"Hyderabad"},{"IATA_code":"IDR","ICAO_code":"VAID","airport_name":"Devi Ahilyabai Holkar Airport","city_name":"Indore"},{"IATA_code":"JLR","ICAO_code":"VAJB","airport_name":"Jabalpur Airport","city_name":"Jabalpur"},{"IATA_code":"JAI","ICAO_code":"VIJP","airport_name":"Sanganeer Airport","city_name":"Jaipur"},{"IATA_code":"IXJ","ICAO_code":"VIJU","airport_name":"Satwari Airport","city_name":"Jammu"},{"IATA_code":"KNL","ICAO_code":"KNL","airport_name":"Karnool Airport","city_name":"Karnool"},{"IATA_code":"CCU","ICAO_code":"VECC","airport_name":"Netaji Subhash Chandra Bose International Airport","city_name":"Kolkata"},{"IATA_code":"LUH","ICAO_code":"VILD","airport_name":"Amritsar Airport","city_name":"Ludhiana"},{"IATA_code":"IXM","ICAO_code":"VOMD","airport_name":"Madurai Airport","city_name":"Madurai"},{"IATA_code":"BOM","ICAO_code":"VABB","airport_name":"Chhatrapati Shivaji International Airport","city_name":"Mumbai"},{"IATA_code":"MYQ","ICAO_code":"VOMY","airport_name":"Mysore Airport","city_name":"Mysore"},{"IATA_code":"PAT","ICAO_code":"VEPT","airport_name":"Patna Airport","city_name":"Patna"},{"IATA_code":"PNQ","ICAO_code":"VAPO","airport_name":"Lohegaon Airport","city_name":"Pune"},{"IATA_code":"IXR","ICAO_code":"VERC","airport_name":"Birsa Munda International Airport","city_name":"Ranchi"},{"IATA_code":"SXR","ICAO_code":"VISR","airport_name":"Srinagar Airport","city_name":"Srinagar"},{"IATA_code":"STV","ICAO_code":"VASU","airport_name":"Surat Airport","city_name":"Surat"},{"IATA_code":"UDR","ICAO_code":"VAUD","airport_name":"Dabok Airport","city_name":"Udaipur"},{"IATA_code":"BDQ","ICAO_code":"VABO","airport_name":"Vadodara Airport","city_name":"Vadodara"},{"IATA_code":"VTZ","ICAO_code":"VEVZ","airport_name":"Vishakhapatnam Airport","city_name":"Vishakhapatnam"}]';
-    var json_response=  JSON.parse(json_airport);
-      for(var i=0;i<json_response.length;i++){
-          if(json_response[i].IATA_code===citycode){
-			 url = 'https://www.covidhotspots.in/covid/city/'+json_response[i].city_name+'/hotspots';
-          }
-      }
      var contentString="You are here";
 	 var window = new google.maps.InfoWindow({
    			 		content: contentString
@@ -458,8 +464,8 @@
     xhttp.onreadystatechange = function () {
         if(this.readyState == 4 && this.status == 200 ) {
             var containmentlist = JSON.parse(this.responseText);
-
-            for(var i=0;i<containmentlist.length;i++){
+            if(typeof containmentlist !== "undefined" && containmentlist != null && containmentlist.length != null && containmentlist.length > 0   ){
+              for(var i=0;i<containmentlist.length;i++){
                 var place=containmentlist[i].geocord;
                 var center={};
                 var placeArray=[];
@@ -476,13 +482,110 @@
             		center: center,
 					radius:50
           		});
+              }
+            }else{
+			alert("Sorry containment details is not found!");
             }
-    	}
+        }
     }
     xhttp.open('GET',url,true);
     xhttp.setRequestHeader('Content-Type','application/json;charset=UTF-8');
     xhttp.send();
 	}
+
+  const getCityListsCircle = function (city) {
+      var latitude=null;
+      var longitude=null;
+	   const geocoder = new google.maps.Geocoder();
+     promise_city = new Promise(function(resolve, reject) {
+		 geocoder.geocode(
+          {
+            address: city
+          },
+          (results, status) => {
+            if (status === "OK") {
+				var value= JSON.stringify(results);
+                var jsonResponse=JSON.parse(value);
+				 var latandLngOrigin=jsonResponse[0].geometry.location.lat +","+jsonResponse[0].geometry.location.lng;
+ 					 resolve(latandLngOrigin);
+
+            } else {
+              alert(
+                "Geocode was not successful for the following reason: " + status
+              );
+            }
+          }
+        );
+        });
+
+	Promise.all([promise_city]).then(values => {
+
+     placeArray=values[0].split(",");
+     latitude=Number(placeArray[0]);
+     longitude=Number(placeArray[1]);
+
+       url = 'https://www.covidhotspots.in/covid/city/'+city+'/hotspots';
+     const map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 12,
+          center: {
+             lat: latitude,
+            lng: longitude
+          },
+          mapTypeId: "terrain"
+        });
+
+	var contentString="You searched for: "+city;
+	 var window = new google.maps.InfoWindow({
+   			 		content: contentString
+  		});
+      var pin={};
+      pin.lat=latitude;
+      pin.lng=longitude;
+
+     var marker = new google.maps.Marker({
+			position: pin,
+            map: map,
+ 			title: 'Info',
+         	animation: google.maps.Animation.DROP,
+         	draggable: true
+	});
+	window.open(map, marker);
+    marker.setAnimation(google.maps.Animation.BOUNCE);
+
+    const xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if(this.readyState == 4 && this.status == 200 ) {
+            var containmentlist = JSON.parse(this.responseText);
+            if(typeof containmentlist !== "undefined" && containmentlist != null && containmentlist.length != null && containmentlist.length > 0   ){
+              for(var i=0;i<containmentlist.length;i++){
+                var place=containmentlist[i].geocord;
+                var center={};
+                var placeArray=[];
+                placeArray=place.split(",");
+                center.lat=Number(placeArray[0]);
+                center.lng=Number(placeArray[1]);
+               const cityCircle = new google.maps.Circle({
+            		strokeColor: "#FF0000",
+            		strokeOpacity: 0.8,
+           			strokeWeight: 2,
+           			fillColor: "#FF0000",
+            		fillOpacity: 0.35,
+            		map,
+            		center: center,
+					radius:50
+          		});
+              }
+            }else{
+			alert("Sorry containment details not found!");
+            }
+        }
+    }
+    xhttp.open('GET',url,true);
+    xhttp.setRequestHeader('Content-Type','application/json;charset=UTF-8');
+    xhttp.send();
+
+});
+}
 
 
 
