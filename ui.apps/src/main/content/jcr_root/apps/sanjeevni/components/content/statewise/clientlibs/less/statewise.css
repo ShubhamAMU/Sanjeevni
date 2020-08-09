@@ -1,0 +1,138 @@
+  #myInput {
+  background-image: url('../resources/searchicon.png');
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+  border-radius:30px;
+  
+}
+
+input:focus{
+    outline: none;
+}
+
+table {border: 1px solid #gray}
+table td { border: 1px solid #gray; }
+
+
+
+th {
+	
+	 background-color: #0094cc;
+}
+
+.table td, .table th {
+	padding:.25rem;
+}
+
+.cursor-pointer {
+	cursor:pointer;
+}
+
+
+.map {
+	margin-top:8em;
+	margin-left:6em;
+}
+
+
+.odd{
+    background-color:lightgray;
+}
+.even{
+    background-color:#ffffff;
+}
+
+
+.my-custom-scrollbar {
+position: relative;
+height: 30%;
+overflow: auto;
+}
+.table-wrapper-scroll-y {
+display: block;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+html {
+  /*font-family: 'Merriweather', serif;*/
+  font-size: 13px;
+}
+body {
+  padding: 5px 10px;
+  /*background-color:#0094cc1f;*/
+}
+
+svg {
+  display: block;
+  width: 100%;
+  
+}
+#states *.on {
+ fill: #438BF0;
+
+}
+
+
+#states *.activecase {
+  fill: red;
+}
+
+#states *.moderatecase {
+  fill: #fc7703;
+}
+
+#states *.medium {
+  fill: #fcba03;
+}
+
+#states *.mild {
+  fill: #CCF043 ;
+}
+
+
+
+
+
+
+
+
+.list-of-states {
+  margin: 0;
+  padding: 0;
+  columns: 100px auto;
+  column-gap: 8px;
+  list-style: none;
+}
+.list-of-states li {
+  padding: 2px 4px;
+  display: inline-block;
+  width: 100%;
+}
+.list-of-states .on {
+  background: #cc76005c;
+  color: white;
+  font-weight: bold;
+}
+
+.info_panel {
+  background-color: #a6a4d457;
+  border-radius:10px;
+
+  padding: 10px;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif;
+  position: absolute;
+  border: 1px solid #gray;
+  color: #333;
+  white-space: nowrap;
+}
+}
+}
+}
+

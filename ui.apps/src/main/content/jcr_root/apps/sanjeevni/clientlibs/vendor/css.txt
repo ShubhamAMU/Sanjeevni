@@ -1,0 +1,2 @@
+css/bootstrap-4.5.min.css
+css/bootstrap-table-1.10.1.min.css
