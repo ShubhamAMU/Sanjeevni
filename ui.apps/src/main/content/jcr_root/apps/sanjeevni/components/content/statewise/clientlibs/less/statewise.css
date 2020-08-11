@@ -35,7 +35,7 @@ th {
 
 
 .map {
-	margin-top:8em;
+	margin-top:5em;
 	margin-left:6em;
 }
 
@@ -50,7 +50,7 @@ th {
 
 .my-custom-scrollbar {
 position: relative;
-height: 30%;
+height: 450px;
 overflow: auto;
 }
 .table-wrapper-scroll-y {
@@ -100,7 +100,7 @@ svg {
 
 
 
-
+/*
 
 .list-of-states {
   margin: 0;
@@ -114,8 +114,9 @@ svg {
   display: inline-block;
   width: 100%;
 }
+*/
 .list-of-states .on {
-  background: #cc76005c;
+  background: red;
   color: white;
   font-weight: bold;
 }
