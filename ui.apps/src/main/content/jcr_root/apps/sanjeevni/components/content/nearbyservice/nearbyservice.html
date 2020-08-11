@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="column">
+        <div class="inner" id="floating-panel">
+
+            <b>Nearby Services: </b>
+            <select id="nearbyService" value="">
+                <option value="hospital">Hospital</option>
+                <option value="police">Police Station</option>
+                <option value="restaurant">Restaurant</option>
+            </select>
+
+            <button class="button-zone " onclick="getMyLocation()"><span>Submit</span></button>
+            <p id="demo" class="font-route"></p>
+
+
+        </div>
+    </div>
+    <div class="column" id="map">
+    </div>
+</div>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCZuiZMLzQ4wcmlu4JlVK-RoX3QTADLVbI&libraries=places&callback=initMapNearby" async defer></script>

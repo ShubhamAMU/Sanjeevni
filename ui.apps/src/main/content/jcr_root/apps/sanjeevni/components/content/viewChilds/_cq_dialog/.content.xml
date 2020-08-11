@@ -52,6 +52,12 @@
                                             fieldDescription="Description"
                                             fieldLabel="Description"
                                             name="./desc"/>
+                                        <id
+                                            jcr:primaryType="nt:unstructured"
+                                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                            fieldDescription="Name of Product"
+                                            fieldLabel="Product ID"
+                                            name="./iD"/>
                                     </items>
                                 </column>
                             </items>

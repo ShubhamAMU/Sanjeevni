@@ -1,5 +1,6 @@
 $(document).ready(function() {
- 
+    var urlString=location.pathname;
+    if(urlString.indexOf("statewise-data.html")!=-1){
 	   const section = document.querySelector('tbody');
 	   var svgStates = document.querySelectorAll("#states > *");
 	   var wordStates;
@@ -291,9 +292,170 @@ function getActive(active,recover,deceased){
 
 
 
+	var ctx = document.getElementById('myChart').getContext('2d');
+	var monthObj={};
+	months=["January","February","March","April","May","June","July","August","September","October","November","December"];
+	shortMonths=["Jan","Feb","Mar","Apr","May","June","July","Aug","Sept","Oct","Nov","Dec"];
+	totalConfirmedCase=[];
+	totalRecoveredCase=[];
+	totalDeceasedCase=[];
+	totaltime=[];
+	for(var i = 0; i < months.length; i++){
+			// obj = Object
+			// keys = key array
+			// values = value array
+			monthObj[months[i]]=shortMonths[i];
+
+	}
+async function fetchData() {
+
+
+
+
+
+				caseObj={};
+				const response = await fetch('https://api.covid19india.org/data.json');
+                const mainResponse = await response.json();
+                const graphData = mainResponse.cases_time_series;
+
+                const mothsInfo = Array.from(new Set(graphData.map(ele => ele.date.trim().split(' ')[1])));
+
+				graphData.forEach(ele => {
+
+						dateArray=ele.date.trim().split(' ');
+						totalConfirmedCase= [...totalConfirmedCase,ele.totalconfirmed];
+						totalRecoveredCase= [...totalRecoveredCase,ele.totalrecovered];
+						totalDeceasedCase= [...totalDeceasedCase,ele.totaldeceased];
+						totaltime=[...totaltime, ele.date.trim()];
+
+
+				});
+
+				/*mothsInfo.forEach(month => {
+
+				const filterData = graphData.filter(ele => ele.date.indexOf(month) > -1);
+				const { length } = filterData;
+				console.log(filterData);
+
+				 totalConfirmedCase =[...totalConfirmedCase, parseInt(filterData[length - 2].totalconfirmed)];
+				 totalRecoveredCase=[...totalRecoveredCase, parseInt(filterData[length - 2].totalrecovered)];
+				 totalDeceasedCase=[...totalDeceasedCase,parseInt(filterData[length - 2].totaldeceased)];
+				 totaltime=[...totaltime, monthObj[filterData[length - 2].date.split(' ')[1]]];
+
+
+
+
+
+				});*/
+
+
+
+Chart.defaults.global.defaultFontFamily = "Lato";
+Chart.defaults.global.defaultFontSize = 12;
+
+var dataFirst = {
+    label: "Recovered",
+    //data: [0, 59, 75, 20, 20, 55, 40],
+	data: totalRecoveredCase,
+    lineTension: 0,
+    fill: true,
+	backgroundColor: '#8EC19B',
+    borderColor: 'green'
+  };
+
+var dataSecond = {
+    label: "Confirm Case",
+    //data: [20, 15, 60, 60, 65, 30, 70],
+	data: totalConfirmedCase,
+    lineTension: 0,
+    fill: true,
+	backgroundColor: '#C8C7EA',
+	borderColor: 'blue'
+  };
+
+
+  var dataThird = {
+    label: "Death",
+    //data: [20, 15, 60, 60, 65, 30, 70],
+	data: totalDeceasedCase,
+    lineTension: 0,
+    fill: true,
+	backgroundColor: '#F2B0C4',
+    borderColor: 'red'
+  };
+
+var confim_recover_case = {
+  //labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+  labels:totaltime,
+  datasets: [dataFirst,dataSecond]
+};
+
+
+var deceased_case = {
+  //labels: ["0s", "10s", "20s", "30s", "40s", "50s", "60s"],
+  labels:totaltime,
+  datasets: [dataThird]
+};
+
+var chartOptions = {
+	responsive: true,
+
+	scales: {
+            xAxes: [{
+              gridLines: {
+                display: false
+              }
+            }],
+            yAxes: [{
+              gridLines: {
+                display: false
+              }
+			  ,   ticks: {
+                    callback: function(label, index, labels) {
+                        return label/1000+'k';
+                    }
+                }
+            }
+
+
+			]
+          },
+
+
+
+  legend: {
+    display: true,
+    position: 'top',
+    labels: {
+      boxWidth: 20,
+      fontColor: 'black'
+    }
+  }
+};
+
+var totalCaseChart = new Chart(ctx, {
+  type: 'line',
+  data: confim_recover_case,
+  options: chartOptions
+});
+
+var totalCaseChart = new Chart(document.getElementById('myChart2').getContext('2d'), {
+  type: 'line',
+  data: deceased_case,
+  options: chartOptions
+});
+
+
+
+}
+
+fetchData();
+
+
+
 
 	
 
-    
+}    
 });
 
