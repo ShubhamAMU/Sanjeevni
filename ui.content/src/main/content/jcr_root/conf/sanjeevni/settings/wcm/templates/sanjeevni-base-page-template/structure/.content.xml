@@ -13,7 +13,7 @@
                 jcr:primaryType="nt:unstructured"
                 jcr:title="Experience Fragment Header"
                 sling:resourceType="sanjeevni/components/content/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/sanjeevni/language-masters/en/site/header/master"/>
+                fragmentVariationPath="/content/experience-fragments/sanjeevni/us/en/site/header/header-xf"/>
             <responsivegrid
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="wcm/foundation/components/responsivegrid"
@@ -21,7 +21,7 @@
             <experiencefragment-footer
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="sanjeevni/components/content/experiencefragment"
-                fragmentVariationPath="/content/experience-fragments/sanjeevni/language-masters/en/site/footer/master"/>
+                fragmentVariationPath="/content/experience-fragments/sanjeevni/us/en/site/footer/footer-xf"/>
         </root>
         <cq:responsive jcr:primaryType="nt:unstructured">
             <breakpoints jcr:primaryType="nt:unstructured">
