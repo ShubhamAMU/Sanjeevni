@@ -2,7 +2,7 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2020-08-10T22:01:43.423+05:30"
+        cq:lastModified="{Date}2020-08-12T18:51:25.134+05:30"
         cq:lastModifiedBy="admin"
         cq:tags="[experience-fragments:variation/web]"
         cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-covid19-experience-fragment-template"
@@ -19,15 +19,26 @@
                 <image
                     jcr:created="{Date}2020-08-10T22:01:19.709+05:30"
                     jcr:createdBy="admin"
-                    jcr:lastModified="{Date}2020-08-10T22:01:43.375+05:30"
+                    jcr:lastModified="{Date}2020-08-12T18:51:25.042+05:30"
                     jcr:lastModifiedBy="admin"
                     jcr:primaryType="nt:unstructured"
                     sling:resourceType="sanjeevni/components/content/image"
                     altValueFromDAM="true"
                     displayPopupTitle="true"
-                    fileReference="/content/dam/sanjeevni/hclcovid/hcl.PNG"
+                    fileReference="/content/dam/sanjeevni/header_hcl_final.jpg"
                     isDecorative="false"
                     titleValueFromDAM="true"/>
+                <navigation
+                    jcr:created="{Date}2020-08-12T09:57:34.012+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-12T09:58:09.063+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/structure/navigation"
+                    collectAllPages="true"
+                    disableShadowing="false"
+                    navigationRoot="/content/sanjeevni/us"
+                    structureStart="1"/>
             </responsivegrid>
         </root>
     </jcr:content>
