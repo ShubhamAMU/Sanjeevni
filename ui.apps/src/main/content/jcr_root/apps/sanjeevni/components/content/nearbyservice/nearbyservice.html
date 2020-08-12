@@ -4,9 +4,13 @@
 
             <b>Nearby Services: </b>
             <select id="nearbyService" value="">
-                <option value="hospital">Hospital</option>
-                <option value="police">Police Station</option>
-                <option value="restaurant">Restaurant</option>
+                <sly data-sly-list.multifield="${resource.listChildren}">
+                   <sly data-sly-test="${multifield.name == 'searchCriteria'}">
+                       <sly data-sly-list.child="${multifield.listChildren}">
+                       		<option value="${child.searchKeyword}">${child.title}</option>
+                       </sly>
+                    </sly>
+                </sly>
             </select>
 
             <button class="button-zone " onclick="getMyLocation()"><span>Submit</span></button>

@@ -121,7 +121,7 @@ function createMarkers(places) {
     map.fitBounds(bounds);
 }
 
-const getMyLocation = function () {
+function getMyLocation() {
  		 if (navigator.geolocation) {
    		 navigator.geolocation.getCurrentPosition(showMyPosition);
 		  } else {
