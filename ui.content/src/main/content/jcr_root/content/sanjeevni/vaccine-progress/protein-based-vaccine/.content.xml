@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-08-14T20:03:06.171+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-08-13T20:33:09.077+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Protein based vaccine"
+        jcr:uuid="0b1d2641-0cf8-4aa9-86cb-bd1c56f9bcae"
+        sling:resourceType="sanjeevni/components/structure/page"
+        pageTitle="Protein based"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text_1863451963_copy
+                    jcr:created="{Date}2020-08-05T18:05:12.533+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-13T16:11:33.520+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/text"
+                    text="&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; border=&quot;1&quot;>&#xd;&#xa;&lt;tbody>&lt;tr>&lt;th valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Sl.No&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>&amp;nbsp;Company and Partnership&lt;/b>&lt;/th>&#xd;&#xa;&lt;th>&lt;b>Origin&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Pre-Clinical&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp; &lt;b>Phase-I&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot;>&amp;nbsp; &amp;nbsp; &lt;b>Phase-II&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp; &amp;nbsp; &lt;b>Phase-III&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>1&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#1&quot; target=&quot;_self&quot;>Anhui Zhifei Longcom and Chinese Academy of Medical Sciences&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>2&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#2&quot; target=&quot;_self&quot;>Novavax&amp;nbsp;&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>3&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#3&quot; target=&quot;_self&quot;>Clover Biopharmaceuticals , GSK , Dynavax&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>4&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#4&quot; target=&quot;_self&quot;>Vaxine&amp;nbsp;&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Australia&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>5&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#5&quot; target=&quot;_self&quot;>Medicago,GSK and Dynavax&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Canada&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>6&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#6&quot; target=&quot;_self&quot;>University of Queensland&amp;nbsp; and CSL&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Australia&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>7&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#7&quot; target=&quot;_self&quot;>Kentucky BioProcessing&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>8&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#8&quot; target=&quot;_self&quot;>Baylor College of Medicine and Texas Children’s Hospital&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>9&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#9&quot; target=&quot;_self&quot;>University of Pittsburgh&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>10&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/protein-based-vaccine.html#10&quot; target=&quot;_self&quot;>Sanofi and GSK&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United Kingdom&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;/tbody>&lt;/table>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </text_1863451963_copy>
+                <viewchilds
+                    jcr:created="{Date}2020-07-13T17:02:12.540+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T20:03:06.155+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/viewChilds">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="In July, the Chinese company Anhui Zhifei Longcom began Phase II trials for a vaccine that is a combination of viral proteins and an adjuvant that stimulates the immune system. The company is part of Chongqing Zhifei Biological Products and has partnered with the Chinese Academy of Medical Sciences."
+                            iD="1"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/zfsw-800.png"
+                            product="Anhui Zhifei Longcom and Chinese Academy of Medical Sciences"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="Maryland-based Novavax has developed a way to stick proteins onto microscopic particles. They’ve created vaccines for a number of different diseases using this platform; their flu vaccine finished Phase III trials in March. The company launched trials for a Covid-19 vaccine in May, and the Coalition for Epidemic Preparedness Innovations has invested $384 million in the vaccine. On July 6, Novavax announced a U.S. government award of $1.6 billion to support clinical trials and manufacturing. If the trials succeed, Novavax expects to deliver 100 million doses for use in the United States by the first quarter of 2021. Plants in Europe and Asia would be able to satisfy more of the world’s demand."
+                            iD="2"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/novavax-800.png"
+                            product="Novavax "/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Clover Biopharmaceuticals has developed a vaccine containing a protein from coronaviruses. To further stimulate the immune system, the vaccine is being given in conjunction with so-called adjuvants made by British drugmaker GSK and the American company Dynavax. Investments from CEPI will support the development of manufacturing that could lead to the production of hundreds of millions of doses a year."
+                            iD="3"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/clover-800.png"
+                            product="Clover Biopharmaceuticals , GSK , Dynavax"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="The Australian company Vaxine developed a vaccine that combines viral proteins with an adjuvant that stimulates the immune system. They successfully completed Phase I trials in July and expect to start Phase II trials in September."
+                            iD="4"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/vaxine-800.png"
+                            product="Vaxine "/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="Canada-based Medicago, partly funded by the cigarette maker Philip Morris, uses a species of tobacco to make vaccines. They deliver virus genes into leaves, and the plant cells then create protein shells that mimic viruses. In July, Medicago launched Phase I trials on a plant-based Covid-19 vaccine in combination with adjuvants from drug makers GSK and Dynavax. If the trial goes well, they plan to start Phase II/III trials in October."
+                            iD="5"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/medicago-800.png"
+                            product="Medicago,GSK and Dynavax"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            desc="A vaccine from Australia’s University of Queensland delivers viral proteins altered to draw a stronger immune response. The university launched Phase I trials in July, combining the proteins with an adjuvant made by CSL. If the results are positive, CSL will advance late stage clinical trials and expects to make tens of millions of doses."
+                            iD="6"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/uqueensland-800.png"
+                            product="University of Queensland  and CSL"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            desc="A second tobacco-based vaccine is in development at Kentucky BioProcessing, an American subsidiary of British American Tobacco, the maker of Lucky Strike and other cigarettes. Like Medicago, Kentucky BioProcessing engineers a species of tobacco called Nicotiana benthamiana to make viral proteins. The company previously used this technique to make a drug called Zmapp for Ebola. After preclinical testing in the spring, they registered a Phase I trial for their coronavirus vaccine in July."
+                            iD="7"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/kbp-800.png"
+                            product="Kentucky BioProcessing"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            desc="After the SARS epidemic in 2002, Baylor College of Medicine researchers began developing a vaccine that could prevent a new outbreak. Despite promising early results, support for the research disappeared. Because the coronaviruses that cause SARS and Covid-19 are very similar, the researchers are reviving the project in partnership with the Texas Children’s Hospital."
+                            iD="8"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/baylor-800.png"
+                            product="Baylor College of Medicine and Texas Children’s Hospital"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            desc="A vaccine in development by the University of Pittsburgh, called PittCoVacc, is a skin patch tipped with 400 tiny needles made of sugar. When placed on the skin, the needles dissolve and deliver virus proteins into the body."
+                            iD="9"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/upittsburgh-800.png"
+                            product="University of Pittsburgh"/>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            desc="In addition to their mRNA vaccine, Sanofi is developing a vaccine based on viral proteins. They are producing the proteins with engineered viruses that grow inside insect cells. GSK will supplement these proteins with adjuvants that stimulate the immune system. The companies expect to enter clinical trials in September. In July they reached two major agreements for supplying the vaccine next year. They reached an agreement with the British government to provide up to 60 million doses if the vaccine succeeds in trials. Meanwhile, the United States will give the companies $2.1 billion for 100 million doses. Sanofi has said it could potentially produce at least 600 million doses a year."
+                            iD="10"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/sanofi-800.png"
+                            product=" Sanofi and GSK"/>
+                    </products>
+                </viewchilds>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

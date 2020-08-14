@@ -1,0 +1,31 @@
+$(document).ready(function() {
+
+$('.icoFacebook').on('click', function() {window.open("https://m.facebook.com/Sanjeevni-128363332060596/",'_blank');
+ });
+    $('.icoLinkedin').on('click', function() {window.open("https://www.linkedin.com/company/sanjeevni-hackathon",'_blank');
+ });
+    $('.icotwitter').on('click', function() {window.open("https://twitter.com/Sanjeev79001414",'_blank');
+ });
+    $('.icoinstagram').on('click', function() {window.open("https://www.instagram.com/sanjeevnicov/",'_blank');
+ });
+    $('.Aarogya-setu').on('click', function() {window.open("https://www.mygov.in/aarogya-setu-app/",'_blank');
+ });
+    $('.MoHFW').on('click', function() {window.open("http://www.mohfw.gov.in/",'_blank');
+ });
+    $('.AkshayPatra').on('click', function() {window.open("https://www.akshayapatra.org/covid-relief-services",'_blank');
+ });
+    $('.WHO-India').on('click', function() {window.open("https://www.who.int/countries/ind/en/",'_blank');
+ });
+    $('.UNICEF').on('click', function() {window.open("https://www.unicef.org/india/coronavirus/covid-19",'_blank');
+ });
+    $('.Ayush-Ministry').on('click', function() {window.open("https://www.ayush.gov.in/",'_blank');
+ });
+    $('.swiggy').on('click', function() {window.open("https://www.swiggy.com/",'_blank');
+ });
+    $('.zomato').on('click', function() {window.open("https://www.zomato.com/",'_blank');
+ });
+    $('.grofers').on('click', function() {window.open("https://grofers.com/",'_blank');
+ });
+    $('.bigbasket').on('click', function() {window.open("https://www.bigbasket.com/",'_blank');
+ });
+});

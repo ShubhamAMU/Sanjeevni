@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var urlString=location.pathname;
-    if(urlString.indexOf("statewise-data.html")!=-1){
+    if(urlString.indexOf("state-wise-data.html")!=-1){
 	   const section = document.querySelector('tbody');
 	   var svgStates = document.querySelectorAll("#states > *");
 	   var wordStates;
@@ -187,8 +187,8 @@ function addOnFromList(el,e,eventType) {
 //  console.log(stateName);
  if(eventType=="map"){
 	   $('.info_panel').css({
-            top: e.clientY,
-            left: e.clientX
+            top: "65%",
+            left: "77%"
    });
  }
  else
@@ -196,7 +196,7 @@ function addOnFromList(el,e,eventType) {
 	 var bbox=document.querySelector("#" + stateCode).getBBox();
 
 		middleX = "17%";
-		middleY = "40%" ;
+		middleY = "65%" ;
 
 	   $('.info_panel').css({
             top: middleY,

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-08-14T18:05:44.010+05:30"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Near By Services"
+        sling:resourceType="sanjeevni/components/structure/page"
+        pageTitle="Services">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2020-07-25T01:09:12.528+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <nearbyservice
+                    jcr:created="{Date}2020-08-14T18:05:12.099+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T18:05:44.006+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/nearbyservice">
+                    <searchCriteria jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            searchKeyword="hospital"
+                            title="Hospitals"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            searchKeyword="police"
+                            title="Police Station"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            searchKeyword="pharmacy"
+                            title="Pharmacy"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            searchKeyword="atm"
+                            title="ATM"/>
+                    </searchCriteria>
+                </nearbyservice>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+    <hospitals/>
+</jcr:root>

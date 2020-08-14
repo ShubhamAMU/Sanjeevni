@@ -207,22 +207,22 @@
                 </image>
                 <viewMaster jcr:primaryType="nt:unstructured">
                     <policy_viewMaster
-                            jcr:lastModified="{Date}2020-08-14T14:09:09.533+05:30"
-                            jcr:lastModifiedBy="admin"
-                            jcr:primaryType="nt:unstructured"
-                            jcr:title="ViewMaster Policy"
-                            sling:resourceType="wcm/core/components/policy/policy">
+                        jcr:lastModified="{Date}2020-08-14T18:32:13.053+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ViewMaster Policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                         <cq:styleGroups jcr:primaryType="nt:unstructured">
                             <item0
-                                    cq:styleGroupLabel="Styles"
-                                    jcr:primaryType="nt:unstructured">
+                                cq:styleGroupLabel="Styles"
+                                jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
                                     <item0
-                                            cq:styleClasses="vaccine"
-                                            cq:styleId="1597394337854"
-                                            cq:styleLabel="Vaccine Style"
-                                            jcr:primaryType="nt:unstructured"/>
+                                        cq:styleClasses="vaccine"
+                                        cq:styleId="1597394337854"
+                                        cq:styleLabel="Vaccine Style"
+                                        jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
                             </item0>
                         </cq:styleGroups>
@@ -239,10 +239,10 @@
                             <item0 jcr:primaryType="nt:unstructured">
                                 <cq:styles jcr:primaryType="nt:unstructured">
                                     <item0
-                                            cq:styleClasses="vaccine-table"
-                                            cq:styleId="1597386398815"
-                                            cq:styleLabel="Vaccine Table"
-                                            jcr:primaryType="nt:unstructured"/>
+                                        cq:styleClasses="vaccine-table"
+                                        cq:styleId="1597386398815"
+                                        cq:styleLabel="Vaccine Table"
+                                        jcr:primaryType="nt:unstructured"/>
                                 </cq:styles>
                             </item0>
                         </cq:styleGroups>
@@ -406,6 +406,27 @@
                 <carousel jcr:primaryType="nt:unstructured"/>
                 <breadcrumb jcr:primaryType="nt:unstructured"/>
                 <accordion jcr:primaryType="nt:unstructured"/>
+                <viewChilds jcr:primaryType="nt:unstructured">
+                    <policy_viewChilds
+                        jcr:lastModified="{Date}2020-08-14T18:34:00.585+05:30"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Vew Child Policy"
+                        sling:resourceType="wcm/core/components/policy/policy">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                        <cq:styleGroups jcr:primaryType="nt:unstructured">
+                            <item0 jcr:primaryType="nt:unstructured">
+                                <cq:styles jcr:primaryType="nt:unstructured">
+                                    <item0
+                                        cq:styleClasses="vaccine-text"
+                                        cq:styleId="1597410230645"
+                                        cq:styleLabel="Vaccine Text"
+                                        jcr:primaryType="nt:unstructured"/>
+                                </cq:styles>
+                            </item0>
+                        </cq:styleGroups>
+                    </policy_viewChilds>
+                </viewChilds>
             </content>
             <structure jcr:primaryType="nt:unstructured">
                 <page jcr:primaryType="nt:unstructured">

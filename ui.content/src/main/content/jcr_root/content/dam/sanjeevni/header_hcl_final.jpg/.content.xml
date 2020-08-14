@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jcr:root xmlns:tiff="http://ns.adobe.com/tiff/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dam="http://www.day.com/dam/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
-    jcr:mixinTypes="[mix:referenceable]"
+    jcr:isCheckedOut="{Boolean}true"
+    jcr:mixinTypes="[mix:referenceable,mix:versionable]"
     jcr:primaryType="dam:Asset"
     jcr:uuid="654a0f66-bb27-4b72-b8e8-7dc1d4b93a23">
     <jcr:content
+        cq:name="header_hcl_final.jpg"
+        cq:parentPath="/content/dam/sanjeevni"
         dam:assetState="processed"
-        jcr:lastModified="{Date}2020-08-12T18:51:03.185+05:30"
+        jcr:lastModified="{Date}2020-08-14T17:37:36.719+05:30"
         jcr:lastModifiedBy="admin"
         jcr:primaryType="dam:AssetContent">
         <metadata
@@ -20,9 +23,12 @@
             dam:Physicalwidthindpi="{Long}96"
             dam:Physicalwidthininches="{Decimal}14.041666984558105"
             dam:Progressive="no"
-            dam:sha1="27f8d1a1b36b71f04dc39ef6ff9ef172d073c365"
+            dam:sha1="63f571e6cf90510628436f8b0e571edf4c7857dd"
             dam:size="{Long}43004"
             dc:format="image/jpeg"
+            dc:modified="{Date}2020-08-13T15:40:01.512+05:30"
+            jcr:lastModified="{Date}2020-08-14T17:37:10.805+05:30"
+            jcr:lastModifiedBy="admin"
             jcr:mixinTypes="[cq:Taggable]"
             jcr:primaryType="nt:unstructured"
             tiff:ImageLength="{Long}122"

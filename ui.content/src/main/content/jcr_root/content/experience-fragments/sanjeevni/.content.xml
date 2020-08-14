@@ -4,5 +4,7 @@
     cq:allowedTemplates="/conf/sanjeevni/settings/wcm/templates/sanjeevni-covid19-experience-fragment-template"
     jcr:primaryType="sling:OrderedFolder"
     jcr:title="Sanjeevni-Covid19 Fragments">
-    <us/>
+    <Footer/>
+    <grocery/>
+    <header/>
 </jcr:root>
