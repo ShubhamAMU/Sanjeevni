@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-08-14T20:02:14.477+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-08-13T20:33:09.077+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Whole virus"
+        jcr:uuid="cec0465b-4425-46c8-b7e9-8ed3ee3cbef2"
+        sling:resourceType="sanjeevni/components/structure/page"
+        pageTitle="Whole virus"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text_1863451963_copy
+                    jcr:created="{Date}2020-08-05T18:05:12.533+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-13T16:11:47.391+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/text"
+                    text="&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; border=&quot;1&quot;>&#xd;&#xa;&lt;tbody>&lt;tr>&lt;th valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Sl.No&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>&amp;nbsp;Company and Partnership&lt;/b>&lt;/th>&#xd;&#xa;&lt;th>&lt;b>Origin&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Pre-Clinical&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp; &lt;b>Phase-I&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot;>&amp;nbsp; &amp;nbsp; &lt;b>Phase-II&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp; &amp;nbsp; &lt;b>Phase-III&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>1&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/whole-virus-vaccine.html#1&quot; target=&quot;_self&quot;>Sinopharm and Wuhan&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>2&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/whole-virus-vaccine.html#2&quot; target=&quot;_self&quot;>Sinovac Biotech&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>3&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/whole-virus-vaccine.html#3&quot; target=&quot;_self&quot;>Institute of Medical Biology at the Chinese Academy of Medical Sciences&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>4&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/whole-virus-vaccine.html#4&quot; target=&quot;_self&quot;>Indian Council of Medical Research and the National Institute of Virology, the&amp;nbsp; &amp;nbsp; &amp;nbsp;Indian company Bharat Biotech&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>India&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp;X&amp;nbsp;&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>5&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/whole-virus-vaccine.html#5&quot; target=&quot;_self&quot;>North Korea&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>North Korea&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;/tbody>&lt;/table>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </text_1863451963_copy>
+                <viewchilds
+                    jcr:created="{Date}2020-07-13T17:02:12.540+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T20:02:14.470+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/viewChilds">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="After finding that an inactivated virus vaccine was safe and provoked an immune response, the state-owned Chinese company Sinopharm launched Phase III trials in July in the United Arab Emirates. Abu Dhabi’s health minister was the first volunteer to be injected, and 15,000 people were scheduled to participate in total. In July, the chairman of Sinopharm told Chinese state media that the vaccine could be ready for public use by the end of the year."
+                            iD="1"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/sinopharm-800.png"
+                            product="Sinopharm and Wuhan"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="The private Chinese company Sinovac Biotech is testing an inactivated vaccine called CoronaVac. In June the company announced that Phase I/II trials on 743 volunteers found no severe adverse effects and produced an immune response. Sinovac then launched a Phase III trial in Brazil in July. The company is also building a facility to manufacture up to 100 million doses annually."
+                            iD="2"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/sinovac-800.png"
+                            product="Sinovac Biotech"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Researchers at the Institute of Medical Biology at the Chinese Academy of Medical Sciences, which has invented vaccines for polio and hepatitis A, started a Phase II trial of an inactivated virus vaccine in June."
+                            iD="3"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/imb-800.png"
+                            product="Institute of Medical Biology at the Chinese Academy of Medical Sciences"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="In collaboration with the Indian Council of Medical Research and the National Institute of Virology, the Indian company Bharat Biotech designed a vaccine called Covaxin based on an inactivated form of the coronavirus. When the company launched Phase I/II trials in July, reports circulated that the vaccine would be ready by August 15. But the C.E.O. of Bharat told reporters it would be available no sooner than early 2021."
+                            iD="4"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/bharat-800.png"
+                            product=" Indian Council of Medical Research and the National Institute of Virology, the Indian company Bharat Biotech"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="On July 18, North Korea’s State Commission of Science and Technology announced on their web site that they had started clinical trials on a vaccine based on part of the coronavirus spike protein. It’s hard to independently determine how much truth there is in the claim from the isolated dictatorship. The commission claimed to have tested the vaccine on animals, but provided no data. What’s more, it stated that effectiveness trials would have to be carried out in another country “since there is no case of Covid-19 in DPR Korea.” That’s a claim outside experts find highly doubtful."
+                            iD="5"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/northkorea-800.png"
+                            product="North Korea"/>
+                    </products>
+                </viewchilds>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

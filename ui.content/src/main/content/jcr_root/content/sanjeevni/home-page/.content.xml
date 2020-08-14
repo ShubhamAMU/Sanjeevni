@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-08-14T18:55:09.269+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-08-14T16:43:32.354+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Home"
+        jcr:uuid="140f8789-300a-423a-9391-cfe9f8444d3c"
+        sling:resourceType="sanjeevni/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2020-07-25T01:09:12.528+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <touchmulti
+                    jcr:created="{Date}2018-08-21T15:20:51.331-04:00"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T18:55:09.261+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/touchmulti">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="Containment Zone, Alternative Road by google map and integrating all of them to find the alternate and best approaches from point A to Point B."
+                            linkPage="/content/sanjeevni/containment-zone.html"
+                            pathbr="/content/dam/sanjeevni/homepage/prevention-zone1.jpg"
+                            product="Safe Route Finder"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="Here you can find near by services like ATM, Hospitals, Medical Stores to ease your life wherever you are. In one click you will get the best route to reach your destination on services."
+                            linkPage="/content/sanjeevni/near-by-services/hospitals.html"
+                            pathbr="/content/dam/sanjeevni/homepage/infsoft-use-case-clinic1.jpg"
+                            product="Services"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Detecting and isolating COVID-19 cases is a priority to slow down the spread of the pandemic. "
+                            linkPage="/content/sanjeevni/state-wise-data.html"
+                            pathbr="/content/dam/sanjeevni/india.jpg"
+                            product="State Data Tracker"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Research is happening at brisk speed. About top 35 are in the different stages of development. For more information, lets navigate to the Vaccine progress page to know more about different types and know which companies are in race.&#xd;&#xa;"
+                            linkPage="/content/sanjeevni/vaccine-progress.html"
+                            pathbr="/content/dam/sanjeevni/homepage/vacciene1.jpg"
+                            product="Vaccine Progress "/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="What are the best food practices at the time of coronavirus, all the details stuff to eat and immunity boosters."
+                            linkPage="/content/sanjeevni/balance-immunity.html"
+                            pathbr="/content/dam/sanjeevni/homepage/vegetables-new1.jpg"
+                            product="Balance Immunity Diet "/>
+                    </products>
+                </touchmulti>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

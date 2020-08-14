@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2020-08-14T20:12:03.010+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-08-13T20:33:28.527+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Ayush Tips"
+        jcr:uuid="082da67f-08e0-4014-84db-32784a3d36eb"
+        sling:resourceType="sanjeevni/components/structure/page"
+        pageTitle="ayush tips">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2020-07-25T01:09:12.528+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <viewchilds
+                    cq:styleIds="[1597410230645]"
+                    jcr:created="{Date}2020-08-13T18:42:53.438+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T20:11:41.954+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/viewChilds">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="Follow these general practices to get better results without any side-effects."
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/ayush/GeneralMeasures.jpg"
+                            product="General Measures"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="These will help in boosting your immunity."
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/ayush/ImmunityPromoters.jpg"
+                            product="Immunity Promoters"/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Home available ingredients for better health."
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/ayush/AyurvedaProcedures.jpg"
+                            product="Ayurveda Procedures"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Follow the general guidelines provided by government."
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/ayush/DontPanic.png"
+                            product="Dont Panic"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="Helpline available from Ministry of Ayush for everyone."
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/ayush/ayushHelpline.jpg"
+                            product="Ayush Helpline"/>
+                    </products>
+                </viewchilds>
+                <experiencefragment
+                    jcr:created="{Date}2020-08-13T19:38:19.167+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-13T19:38:34.929+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/experiencefragment"
+                    fragmentVariationPath="/content/experience-fragments/sanjeevni/grocery/master"/>
+            </responsivegrid>
+            <experiencefragment-header
+                jcr:lastModified="{Date}2020-08-10T13:33:43.344+05:30"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                jcr:title="Experience Fragment Header"
+                sling:resourceType="sanjeevni/components/content/experiencefragment"
+                fragmentVariationPath="/content/experience-fragments/sanjeevni/language-masters/en/site/header/master"/>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:mix="http://www.jcp.org/jcr/mix/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2020-08-14T20:01:52.837+05:30"
+        cq:lastModifiedBy="admin"
+        cq:lastReplicated="{Date}2020-08-13T20:33:09.077+05:30"
+        cq:lastReplicatedBy="admin"
+        cq:lastReplicationAction="Activate"
+        cq:template="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
+        jcr:isCheckedOut="{Boolean}true"
+        jcr:mixinTypes="[mix:versionable]"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Genetic vaccine"
+        jcr:uuid="d969ec00-03b4-442a-b980-f99213bf86c2"
+        sling:resourceType="sanjeevni/components/structure/page"
+        pageTitle="Genetic"
+        socialMedia="[facebook]">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <text_1863451963_copy
+                    jcr:created="{Date}2020-08-05T18:05:12.533+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-13T16:11:06.114+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/text"
+                    text="&lt;table cellpadding=&quot;1&quot; cellspacing=&quot;0&quot; border=&quot;1&quot;>&#xd;&#xa;&lt;tbody>&lt;tr>&lt;th valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Sl.No&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Company and Partnership&lt;/b>&lt;/th>&#xd;&#xa;&lt;th>&lt;b>Origin&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Pre-Clinical&lt;/b>&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp;&lt;b>Phase-I&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot;>&amp;nbsp;&lt;b>Phase-II&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;th scope=&quot;col&quot; valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&lt;b>Phase-III&lt;/b>&amp;nbsp; &amp;nbsp;&lt;/th>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; 1&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#1&quot; target=&quot;_self&quot;>Moderna and National Institues&amp;nbsp;&lt;span>of Health&amp;nbsp;&lt;/span>&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>2&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#2&quot; target=&quot;_self&quot;>BioNTech , Pfizer and Fosum pharma&lt;/a>&amp;nbsp;&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>3&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#3&quot; target=&quot;_self&quot;>Imperial College london and Morningside&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>England&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>4&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#4&quot; target=&quot;_self&quot;>Zydus Cadila&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>India&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>5&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#5&quot; target=&quot;_self&quot;>Anges , Osaka University and Takara Bio&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Japan&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>6&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#6&quot; target=&quot;_self&quot;>Arcturus and Duke-NUS Medical School&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>7&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#7&quot; target=&quot;_self&quot;>Inovio&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>United States of America&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>8&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#8&quot; target=&quot;_self&quot;>CureVac&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Germany&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>9&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#9&quot; target=&quot;_self&quot;>Genexine&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>Korea&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>&amp;nbsp;10&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#10&quot; target=&quot;_self&quot;>Academy of Military Medical Sciences , Suzhou&amp;nbsp;Abogen Biosciences and Walvax&amp;nbsp; Biotechnology&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>China&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;tr>&lt;td valign=&quot;middle&quot; style=&quot;text-align: center;&quot;>11&lt;/td>&#xd;&#xa;&lt;td>&lt;a href=&quot;/content/sanjeevni/vaccine-progress/genetic-vaccine.html#11&quot; target=&quot;_self&quot;>Sanofi and Translate Bio&lt;/a>&lt;/td>&#xd;&#xa;&lt;td>France&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;X&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;td>&amp;nbsp;&lt;/td>&#xd;&#xa;&lt;/tr>&lt;/tbody>&lt;/table>&#xd;&#xa;"
+                    textIsRich="true">
+                    <cq:responsive jcr:primaryType="nt:unstructured">
+                        <default
+                            jcr:primaryType="nt:unstructured"
+                            offset="2"
+                            width="8"/>
+                    </cq:responsive>
+                </text_1863451963_copy>
+                <viewchilds
+                    cq:styleIds="[1597410230645]"
+                    jcr:created="{Date}2020-07-13T17:02:12.540+05:30"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2020-08-14T20:01:52.825+05:30"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="sanjeevni/components/content/viewChilds">
+                    <products jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            desc="Moderna develops vaccines based on messenger RNA (mRNA) to produce viral proteins in the body. They have yet to bring one to the market. In partnership with National Institutes of Health, they found that the vaccine protects monkeys from the coronavirus. In March, the company put the first Covid-19 vaccine into human trials, which yielded promising results, After carrying out a Phase II study they launched a Phase III trial on July 27. The final trial will enroll 30,000 healthy people at about 89 sites around the United States. The government has bankrolled Moderna’s efforts with nearly $1 billion in support."
+                            iD="1"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/moderna-800.png"
+                            product="Moderna and National Institues of Health"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            desc="Pharma to develop their mRNA vaccine. In July, they posted preliminary results from their Phase I/II trials in the United States and Germany. They found that the volunteers produced antibodies against SARS-CoV-2, as well as immune cells called T cells that respond to the virus. Some volunteers experienced moderate side effects such as sleep disturbances and sore arms. On July 27, they announced the launch of a Phase II/III trial with 30,000 volunteers in the United States and other countries including Argentina, Brazil, and Germany.&#xd;&#xa;&#xd;&#xa;The Trump administration awarded a $1.9 billion contract for 100 million doses to be delivered by December and the option to acquire 500 million more doses. Meanwhile, Japan made a deal for 120 million doses. If approved, Pfizer said they expect to manufacture over 1.3 billion doses of their vaccine worldwide by the end of 2021."
+                            iD="2"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/biontech-800.png"
+                            product="  BioNTech , Pfizer and Fosum pharma "/>
+                        <item2
+                            jcr:primaryType="nt:unstructured"
+                            desc="Imperial College London researchers have developed a “self-amplifying” RNA vaccine, which boosts production of a viral protein to stimulate the immune system. They began Phase I/II trials on June 15 and have partnered with Morningside Ventures to manufacture and distribute the vaccine through a new company called VacEquity Global Health. The researchers expect to know if the vaccine is effective by the end of the year."
+                            iD="3"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/imperialcollege-800.png"
+                            product="Imperial College london and Morningside"/>
+                        <item3
+                            jcr:primaryType="nt:unstructured"
+                            desc="Indian vaccine-maker Zydus Cadila has created a DNA-based vaccine. On July 3 they announced approval to start human trials, becoming the second company in India to enter the Covid-19 vaccine race after Bharat Biotech."
+                            iD="4"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/zydus-logo.png"
+                            product="Zydus Cadila"/>
+                        <item4
+                            jcr:primaryType="nt:unstructured"
+                            desc="On June 30, the Japanese biotechnology company AnGes announced they had started safety trials on a DNA-based vaccine, developed in partnership with Osaka University and Takara Bio."
+                            iD="5"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/anges-800.png"
+                            product="Anges , Osaka University and Takara Bio"/>
+                        <item5
+                            jcr:primaryType="nt:unstructured"
+                            desc="The California-based company Arcturus Therapeutics and Duke-NUS Medical School in Singapore have developed an mRNA vaccine. The “self-replicating” design of the molecules in the vaccine led to strong immune responses in animal experiments. On July 21, Singapore approved their application for a Phase I/II trial in humans."
+                            iD="6"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/arcturus-800.png"
+                            product="Arcturus and Duke-NUS Medical School"/>
+                        <item6
+                            jcr:primaryType="nt:unstructured"
+                            desc="On June 30, the American company Inovio announced they had interim Phase I data on their DNA-based vaccine. They found no serious adverse effects, and measured an immune response in 34 out of 36 volunteers. They plan to start Phase II/III trials this summer."
+                            iD="7"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/inovio-800.png"
+                            product="Inovio"/>
+                        <item7
+                            jcr:primaryType="nt:unstructured"
+                            desc="In March, the Trump administration unsuccessfully tried to entice CureVac to move its research from Germany to the United States. In June, the company launched Phase I trials of its mRNA vaccine. The company said its German facility can make hundreds of millions of vaccine doses a year."
+                            iD="8"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/curevac-800.png"
+                            product="CureVac"/>
+                        <item8
+                            jcr:primaryType="nt:unstructured"
+                            desc="The Korean company Genexine started testing the safety of a DNA-based vaccine in June. They anticipate moving to Phase II trials in the fall."
+                            iD="9"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/genexine-800.png"
+                            product="Genexine"/>
+                        <item9
+                            jcr:primaryType="nt:unstructured"
+                            desc="In June, Chinese researchers at the Academy of Military Medical Sciences, Suzhou Abogen Biosciences and Walvax Biotechnology announced they would start their country’s first safety trials on a mRNA-based vaccine, called ARCoV. Earlier studies on monkeys reportedly showed protective effects."
+                            iD="10"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/ams-800.png"
+                            product="Academy of Military Medical Sciences , Suzhou Abogen Biosciences and Walvax   Biotechnology"/>
+                        <item10
+                            jcr:primaryType="nt:unstructured"
+                            desc="The French pharmaceutical company Sanofi is developing an mRNA vaccine in partnership with Translate Bio. On June 23, they announced they were planning Phase I trials in the fall."
+                            iD="11"
+                            linkPage="#"
+                            pathbr="/content/dam/sanjeevni/vaccine-progress/sanofi-800.png"
+                            product="Sanofi and Translate Bio"/>
+                    </products>
+                </viewchilds>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
