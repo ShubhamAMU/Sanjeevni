@@ -1,11 +1,15 @@
 <div class="container">
     <sly data-sly-list.multifield="${resource.listChildren}">
         <sly data-sly-test="${multifield.name == 'products'}">
-            <hr>
             <sly data-sly-list.head="${multifield.listChildren}">
-                <div style="height:190px;"><img src=${head.pathbr} height=150 width=170 style="padding:5px"/>
-                    <h2> <a href="${head.linkPage}"> ${head.product}</a> </h2>
-                    <p>${head.desc}</p>
+                <div class="card flex-row flex-wrap mt-3 mb-2 row homepage">
+                    <div class="card-header border-0 col-md-4">
+                        <img src=${head.pathbr} style="height:auto; max-width:100%;" alt="">
+                    </div>
+                    <div class="card-block px-2 col-md-8">
+                        <h4 class="card-title"><a href="${head.linkPage}"> ${head.product}</a></h4>
+                        <p class="card-text">${head.desc}</p>
+                    </div>
                 </div>
             </sly>
             </hr>

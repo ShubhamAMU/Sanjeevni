@@ -277,19 +277,19 @@
 				if(color==="red"){
                 var length=(resglobal.routes[index].legs[0].steps.length)/2;
                 var uluru=resglobal.routes[index].legs[0].steps[Math.ceil(length)].start_location;
-                var contentString = '<div class="card">'+
-					'<div class="card-header" style="background-color:#ff8f8f ;color:#ffffff;">'+
-				    '<!--span></span> <span style="font-size:22px;margin:5px;"></span-->'+
-			       '<ul class="list-inline">'+
-				   '<li id="zoneDisplayed" class="list-inline-item">Travel Safely</li>'+
-				   '<li class="list-inline-item" style="position:absolute;font-size:22px;top:0px;"></li>'+
-			       '</ul>'+
-		           '</div>'+
-		         '<div class="card-body">'+
-			     '<p class="card-text" style="color:#333333;font-size: 12px;">Total Distance to travel: ' +resglobal.routes[i].legs[0].distance.text +'<br>'+
-                     'Time : '+resglobal.routes[i].legs[0].duration.text +'</p>'+
-		         '</div>'+
-	             '</div>';
+                var contentString = '<div class="card-prevention">'+
+                					'<div class="card-header-prevention" style="background-color:#ff8f8f ;color:#ffffff;">'+
+                				    '<!--span></span> <span style="font-size:22px;margin:5px;"></span-->'+
+                			       '<ul class="list-inline-prevention">'+
+                				   '<li id="zoneDisplayed" class="list-inline-item-prevention">Travel Safely</li>'+
+                				   '<li class="list-inline-item-prevention" style="position:absolute;font-size:22px;top:0px;"></li>'+
+                			       '</ul>'+
+                		           '</div>'+
+                		         '<div class="card-body-prevention">'+
+                			     '<p class="card-text-prevention" style="color:#333333;font-size: 12px;">Total Distance to travel: ' +resglobal.routes[i].legs[0].distance.text +'<br>'+
+                                     'Time : '+resglobal.routes[i].legs[0].duration.text +'</p>'+
+                		         '</div>'+
+                	             '</div>';
 
                  var infowindow = new google.maps.InfoWindow({
    			 		content: contentString
@@ -328,19 +328,19 @@
 
 				 var length=(resglobal.routes[index].legs[0].steps.length)/2;
                 var uluru=resglobal.routes[index].legs[0].steps[Math.ceil(length)].start_location;
-                var contentString = '<div class="card">'+
-					'<div class="card-header" style="background-color:#21b31f ;color:#ffffff;">'+
-				    '<!--span></span> <span style="font-size:22px;margin:5px;"></span-->'+
-			       '<ul class="list-inline">'+
-				   '<li id="zoneDisplayed" class="list-inline-item">Safe route</li>'+
-				   '<li class="list-inline-item" style="position:absolute;font-size:22px;top:0px;"></li>'+
-			       '</ul>'+
-		           '</div>'+
-		         '<div class="card-body">'+
-			      '<p class="card-text" style="color:#333333;font-size: 12px;">Total Distance to travel: ' +resglobal.routes[i].legs[0].distance.text +'<br>'+
-                    'Time : '+resglobal.routes[i].legs[0].duration.text +'</p>'+
-		         '</div>'+
-	             '</div>';
+                var contentString = '<div class="card-prevention">'+
+                					'<div class="card-header-prevention" style="background-color:#21b31f ;color:#ffffff;">'+
+                				    '<!--span></span> <span style="font-size:22px;margin:5px;"></span-->'+
+                			       '<ul class="list-inline-prevention">'+
+                				   '<li id="zoneDisplayed" class="list-inline-item-prevention">Safe route</li>'+
+                				   '<li class="list-inline-item-prevention" style="position:absolute;font-size:22px;top:0px;"></li>'+
+                			       '</ul>'+
+                		           '</div>'+
+                		         '<div class="card-body-prevention">'+
+                			      '<p class="card-text-prevention" style="color:#333333;font-size: 12px;">Total Distance to travel: ' +resglobal.routes[i].legs[0].distance.text +'<br>'+
+                                    'Time : '+resglobal.routes[i].legs[0].duration.text +'</p>'+
+                		         '</div>'+
+                	             '</div>';
 
                  var infowindow = new google.maps.InfoWindow({
    			 		content: contentString
@@ -401,10 +401,17 @@
     xhttp.onreadystatechange = function () {
         if(this.readyState == 4 && this.status == 200 ) {
             areadata = JSON.parse(this.responseText);
+            if(areadata.zone!=='NA'){
 				x.innerHTML = "Latitude: " + position.coords.latitude +
  			 "<br>Longitude: " + position.coords.longitude  +
               "<br>Your area is under "+ areadata.zone+" zone.";
-			 getContainmentListsCircle(areadata.city,position.coords.latitude,position.coords.longitude);
+              }
+            else{
+            x.innerHTML = "Latitude: " + position.coords.latitude +
+             			 "<br>Longitude: " + position.coords.longitude  +
+                          "<br>Region Information not available";
+            }
+			getContainmentListsCircle(areadata.city,position.coords.latitude,position.coords.longitude);
     	}
     }
     xhttp.open('GET',url,true);
@@ -430,6 +437,11 @@
      			       break;
       			  }
    			 }
+          }
+          else{
+               url = 'https://www.covidhotspots.in/covid/city/Agra/hotspots';
+               var zone=document.getElementById("containment-zone");
+               zone.innerHTML='<label class="zones_label" >Containment zones</label> <select id="containment" class="selecting-zone" value="none" onchange="getCityListsCircle(this.options[this.selectedIndex].text)"> <option value="AMD">Agra</option> <option value="AGR">Ahmedabad</option> <option value="BLR">Bangalore</option> <option value="BHO">Bhopal</option> <option value="IXC">Chandigarh</option> <option value="MAA">Chennai</option> <option value="CJB">Coimbatore</option> <option value="DEL">Delhi</option> <option value="HYD">Hyderabad</option> <option value="IDR">Indore</option> <option value="JLR">Jabalpur</option> <option value="JAI">Jaipur</option> <option value="IXJ">Jammu</option> <option value="KNL">Karnool</option> <option value="CCU">Kolkata</option> <option value="LUH">Ludhiana</option> <option value="IXM">Madurai</option> <option value="BOM">Mumbai</option> <option value="MYQ">Mysore</option> <option value="PAT">Patna</option> <option value="PNQ">Pune</option> <option value="IXR">Ranchi</option> <option value="SXR">Srinagar</option> <option value="STV">Surat</option> <option value="UDR">Udaipur</option> <option value="BDQ">Vadodara</option> <option value="VTZ">Vishakhapatnam</option> </select>';
           }
       }
 
