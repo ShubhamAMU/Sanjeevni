@@ -4,11 +4,12 @@
     <jcr:content
         cq:allowedTemplates="/conf/sanjeevni/settings/wcm/templates/sanjeevni-base-page-template"
         cq:deviceGroups="[/etc/mobile/groups/responsive]"
-        cq:lastModified="{Date}2020-07-25T01:47:35.849+05:30"
+        cq:lastModified="{Date}2020-08-14T22:32:49.729+05:30"
         cq:lastModifiedBy="admin"
         cq:lastReplicated="{Date}2020-08-13T20:33:09.077+05:30"
         cq:lastReplicatedBy="admin"
         cq:lastReplicationAction="Activate"
+        cq:redirectTarget="/content/sanjeevni/home-page"
         jcr:isCheckedOut="{Boolean}true"
         jcr:mixinTypes="[mix:versionable]"
         jcr:primaryType="cq:PageContent"
