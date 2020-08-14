@@ -86,7 +86,7 @@ map = new google.maps.Map(document.getElementById('map'), {
 	//Display "More Details" button conditionally
 	var hospitalButton = document.getElementById('hospital-button');
             if(nearbyService==='hospital'){
-                    hospitalButton.innerHTML='<button class="button-zone" ><a href="/content/sanjeevni/us/nearby/hospitals.html"><span>More Details</span></a></button>';
+                    hospitalButton.innerHTML='<button class="button-zone" ><a href="/content/sanjeevni/nearby/hospitals.html"><span>More Details</span></a></button>';
                 }
             else{
     			 hospitalButton.innerHTML="";
