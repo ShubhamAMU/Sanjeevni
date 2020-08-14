@@ -1,49 +1,34 @@
-<sly data-sly-use.multiItems="com.hcl.sanjeevni.core.models.Multifield">
-    <div class="filewrapper">
-        
-        <section class="blade download-center-details">
-            <div class="container">
-                <div class="row">
-
-                    <div>
-                        <sly data-sly-list.head="${multiItems.products.listChildren}">
-                            <section class="description description-blade collapsible noindex" data-sly-attribute.id=${head.iD}>
-                                <header>
-                                    <h3><a href="${head.pathbr}"> ${head.product}</a></h3>
-                                </header>
-
-
-                                <div>
-                                    <div class="content-media">
-                                        <figure class="blade-image">
-                                            <img src="${head.pathbr}" class="center"/>
-                                        </figure>
-
+<sly data-sly-list.multifield="${resource.listChildren}">
+    <sly data-sly-test="${multifield.name == 'products'}">
+        <div class="filewrapper">
+            <section class="blade download-center-details">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <sly data-sly-list.head="${multifield.listChildren}">
+                                <section class="description description-blade collapsible noindex" data-sly-attribute.id=${head.iD}>
+                                    <header>
+                                        <h3><a href="${head.pathbr}"> ${head.product}</a></h3>
+                                    </header>
+                                    <div>
+                                        <div class="content-media">
+                                            <figure class="blade-image">
+                                                <img src="${head.pathbr}" class="center"/>
+                                            </figure>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div class="descipt">
-                                 <p>
-                                    ${head.desc}
-                                 </p>   
-                                </div>
-
-                            </section>
-
-                            <div><br><br></div>
-
-                        </sly>
+                                    <div class="descipt">
+                                        <p>
+                                            ${head.desc}
+                                        </p>
+                                    </div>
+                                </section>
+                                <div><br><br></div>
+                            </sly>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-        </section>
-    </div>
+            </section>
+        </div>
+    </sly>
 </sly>
-
-
-
-
-
-
-

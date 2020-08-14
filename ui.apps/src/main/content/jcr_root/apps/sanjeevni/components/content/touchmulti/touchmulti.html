@@ -1,12 +1,14 @@
-<div class=container>
-<sly data-sly-use.multiItems="com.hcl.sanjeevni.core.models.Multifield">
-<hr>
-    <sly data-sly-list.head="${multiItems.products.listChildren}">
-<div style="height:190px;"><img src=${head.pathbr} height=150 width=170 style="padding:5px"/>
-		<h2> <a href="${head.linkPage}"> ${head.product}</a> </h2>
-               <p>${head.desc}</p>
-</div>
-         <hr>
-   </sly>
-</sly>
+<div class="container">
+    <sly data-sly-list.multifield="${resource.listChildren}">
+        <sly data-sly-test="${multifield.name == 'products'}">
+            <hr>
+            <sly data-sly-list.head="${multifield.listChildren}">
+                <div style="height:190px;"><img src=${head.pathbr} height=150 width=170 style="padding:5px"/>
+                    <h2> <a href="${head.linkPage}"> ${head.product}</a> </h2>
+                    <p>${head.desc}</p>
+                </div>
+            </sly>
+            </hr>
+        </sly>
+    </sly>
 </div>

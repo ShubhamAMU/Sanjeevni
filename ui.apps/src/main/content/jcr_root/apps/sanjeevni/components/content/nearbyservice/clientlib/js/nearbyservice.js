@@ -82,6 +82,16 @@ map = new google.maps.Map(document.getElementById('map'), {
     // Create the places service.
     var service = new google.maps.places.PlacesService(map);
 	const nearbyService = document.getElementById("nearbyService").value;
+
+	//Display "More Details" button conditionally
+	var hospitalButton = document.getElementById('hospital-button');
+            if(nearbyService==='hospital'){
+                    hospitalButton.innerHTML='<button class="button-zone" ><a href="/content/sanjeevni/us/nearby/hospitals.html"><span>More Details</span></a></button>';
+                }
+            else{
+    			 hospitalButton.innerHTML="";
+            };
+
     // Perform a nearby search.
     service.nearbySearch({
             location: pyrmont,

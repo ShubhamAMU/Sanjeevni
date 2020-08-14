@@ -1,79 +1,74 @@
-<sly data-sly-use.multiItems="com.hcl.sanjeevni.core.models.Multifield">
-    <div class="rwd">
-        <div class="bladepar intelparsys">
-            <div class="views-master-grid sortableGrid section">
-                <div id="sortable-grid-1" class="sortable-grid component views-master-component" data-language="en-us"
-                     data-path="#"
-                     data-component-id="1" data-component="sortable-grid">
+<sly data-sly-list.multifield="${resource.listChildren}">
+    <sly data-sly-test="${multifield.name == 'products'}">
+        <div class="rwd">
+            <div class="bladepar intelparsys">
+                <div class="views-master-grid sortableGrid section">
+                    <div id="sortable-grid-1" class="sortable-grid component views-master-component" data-language="en-us"
+                         data-path="#"
+                         data-component-id="1" data-component="sortable-grid">
 
-                    <div class="form-refine-tool form-refine-tool-special sortable-refine-tool">
-                        <div class="refine-tool container">
-
-
-                        </div>
-
-
-                        <div class="shaded sortable-grid">
-                            <div class="product-comp form-refine-comp">
+                        <div class="form-refine-tool form-refine-tool-special sortable-refine-tool">
+                            <div class="refine-tool container">
                             </div>
 
-                            <div class="sortable-grid-result">
-                                <div class="container">
-                                    <div class="container-wrap">
-                                        <div class="views-master-results sortable-item-results sortable-item-listing toggle-able"
-                                             id="sortable-item-results-1">
+                            <div class="shaded sortable-grid">
+                                <div class="product-comp form-refine-comp">
+                                </div>
 
-                                            <sly data-sly-list.head="${multiItems.products.listChildren}">
-                                                <div class="sortable-grid-item matched "
-                                                     data-article-index="${loop.index}">
-                                                    <div class="item-wrap">
+                                <div class="sortable-grid-result">
+                                    <div class="container">
+                                        <div class="container-wrap">
+                                            <div class="views-master-results sortable-item-results sortable-item-listing toggle-able"
+                                                 id="sortable-item-results-1">
 
-                                                        <div class="content-wrap content-headline">
+                                                <sly data-sly-list.head="${multifield.listChildren}">
+                                                    <div class="sortable-grid-item matched "
+                                                         data-article-index="${loop.index}">
+                                                        <div class="item-wrap">
 
-                                                            <h3 class="title">
-                                                                <a href="${head.linkPage}"> ${head.product}</a>
-                                                            </h3>
+                                                            <div class="content-wrap content-headline">
 
-                                                            <figure class="blade-image">
-                                                                <img src="${head.pathbr}" class="center"/>
-                                                            </figure>
+                                                                <h3 class="title">
+                                                                    <a href="${head.linkPage}"> ${head.product}</a>
+                                                                </h3>
 
-                                                            <p class="article-date">${head.desc}</p>
-                                                        </div>
-                                                        <div class="content-wrap content-details">
-                                                            <p></p>
-                                                        </div>
+                                                                <figure class="blade-image">
+                                                                    <img src="${head.pathbr}" class="center"/>
+                                                                </figure>
 
-                                                        <div class="content-wrap content-action">
-                                                            <a class="btn btn-primary full-width" href="${head.linkPage}">View</a>
+                                                                <p class="article-date">${head.desc}</p>
+                                                            </div>
+                                                            <div class="content-wrap content-details">
+                                                                <p></p>
+                                                            </div>
+
+                                                            <div class="content-wrap content-action">
+                                                                <a class="btn btn-primary full-width" href="${head.linkPage}">View</a>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                </div>
-                                            </sly>
+                                                </sly>
+                                            </div>
+                                        </div>
+                                        <div class="text-center-mobile text-center">
+
                                         </div>
                                     </div>
-                                    <div class="text-center-mobile text-center">
+                                    <div class="loader hidden">
+                                        <div class="loading-spinner light-blue hidden"></div>
+                                    </div>
 
+                                    <div class="pagination-bottom">
                                     </div>
                                 </div>
-                                <div class="loader hidden">
-                                    <div class="loading-spinner light-blue hidden"></div>
-                                </div>
-
-                                <div class="pagination-bottom">
-                                   
-
-                                </div>
-                                <div class="content-wrap content-action">
-                                    <a class="btn btn-primary full-width" href="/content/sanjeevni/us/homepage.html">Go Back</a>
-                                </div>
-
 
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </sly>
+
 </sly>
 
